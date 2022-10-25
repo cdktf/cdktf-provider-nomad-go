@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package acltoken
 
@@ -53,11 +52,19 @@ func (a *jsiiProxy_AclToken) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (a *jsiiProxy_AclToken) validatePutRoleParameters(value interface{}) error {
+	return nil
+}
+
 func validateAclToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_AclToken) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AclToken) validateSetExpirationTtlParameters(val *string) error {
 	return nil
 }
 

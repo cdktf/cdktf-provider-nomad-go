@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package namespace
 
@@ -112,6 +111,17 @@ func (n *jsiiProxy_Namespace) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (n *jsiiProxy_Namespace) validatePutCapabilitiesParameters(value *NamespaceCapabilities) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateNamespace_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
@@ -172,6 +182,14 @@ func (j *jsiiProxy_Namespace) validateSetIdParameters(val *string) error {
 func (j *jsiiProxy_Namespace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Namespace) validateSetMetaParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -30,6 +30,10 @@ type AclToken interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpirationTime() *string
+	ExpirationTtl() *string
+	SetExpirationTtl(val *string)
+	ExpirationTtlInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,6 +70,8 @@ type AclToken interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Role() AclTokenRoleList
+	RoleInput() interface{}
 	SecretId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -101,6 +107,8 @@ type AclToken interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRole(value interface{})
+	ResetExpirationTtl()
 	ResetGlobal()
 	ResetId()
 	ResetName()
@@ -108,6 +116,7 @@ type AclToken interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicies()
+	ResetRole()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -188,6 +197,36 @@ func (j *jsiiProxy_AclToken) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclToken) ExpirationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclToken) ExpirationTtl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclToken) ExpirationTtlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationTtlInput",
 		&returns,
 	)
 	return returns
@@ -353,6 +392,26 @@ func (j *jsiiProxy_AclToken) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AclToken) Role() AclTokenRoleList {
+	var returns AclTokenRoleList
+	_jsii_.Get(
+		j,
+		"role",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclToken) RoleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"roleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AclToken) SecretId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -466,6 +525,17 @@ func (j *jsiiProxy_AclToken)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AclToken)SetExpirationTtl(val *string) {
+	if err := j.validateSetExpirationTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expirationTtl",
 		val,
 	)
 }
@@ -791,6 +861,25 @@ func (a *jsiiProxy_AclToken) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AclToken) PutRole(value interface{}) {
+	if err := a.validatePutRoleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRole",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AclToken) ResetExpirationTtl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExpirationTtl",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AclToken) ResetGlobal() {
 	_jsii_.InvokeVoid(
 		a,
@@ -827,6 +916,14 @@ func (a *jsiiProxy_AclToken) ResetPolicies() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPolicies",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclToken) ResetRole() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRole",
 		nil, // no parameters
 	)
 }

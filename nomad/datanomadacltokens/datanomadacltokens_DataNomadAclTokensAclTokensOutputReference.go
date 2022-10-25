@@ -27,6 +27,7 @@ type DataNomadAclTokensAclTokensOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExpirationTime() *string
 	// Experimental.
 	Fqn() *string
 	Global() cdktf.IResolvable
@@ -34,6 +35,7 @@ type DataNomadAclTokensAclTokensOutputReference interface {
 	SetInternalValue(val *DataNomadAclTokensAclTokens)
 	Name() *string
 	Policies() *[]*string
+	Roles() DataNomadAclTokensAclTokensRolesList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +134,16 @@ func (j *jsiiProxy_DataNomadAclTokensAclTokensOutputReference) CreationStack() *
 	return returns
 }
 
+func (j *jsiiProxy_DataNomadAclTokensAclTokensOutputReference) ExpirationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNomadAclTokensAclTokensOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -177,6 +189,16 @@ func (j *jsiiProxy_DataNomadAclTokensAclTokensOutputReference) Policies() *[]*st
 	_jsii_.Get(
 		j,
 		"policies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNomadAclTokensAclTokensOutputReference) Roles() DataNomadAclTokensAclTokensRolesList {
+	var returns DataNomadAclTokensAclTokensRolesList
+	_jsii_.Get(
+		j,
+		"roles",
 		&returns,
 	)
 	return returns

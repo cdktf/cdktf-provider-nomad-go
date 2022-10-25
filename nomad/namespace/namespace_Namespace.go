@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/nomad/r/namespace nomad_namespace}.
 type Namespace interface {
 	cdktf.TerraformResource
+	Capabilities() NamespaceCapabilitiesOutputReference
+	CapabilitiesInput() *NamespaceCapabilities
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -46,6 +48,9 @@ type Namespace interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Meta() *map[string]*string
+	SetMeta(val *map[string]*string)
+	MetaInput() *map[string]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -95,8 +100,11 @@ type Namespace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCapabilities(value *NamespaceCapabilities)
+	ResetCapabilities()
 	ResetDescription()
 	ResetId()
+	ResetMeta()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -114,6 +122,26 @@ type Namespace interface {
 // The jsii proxy struct for Namespace
 type jsiiProxy_Namespace struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Namespace) Capabilities() NamespaceCapabilitiesOutputReference {
+	var returns NamespaceCapabilitiesOutputReference
+	_jsii_.Get(
+		j,
+		"capabilities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Namespace) CapabilitiesInput() *NamespaceCapabilities {
+	var returns *NamespaceCapabilities
+	_jsii_.Get(
+		j,
+		"capabilitiesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Namespace) CdktfStack() cdktf.TerraformStack {
@@ -241,6 +269,26 @@ func (j *jsiiProxy_Namespace) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Namespace) Meta() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"meta",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Namespace) MetaInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metaInput",
 		&returns,
 	)
 	return returns
@@ -450,6 +498,17 @@ func (j *jsiiProxy_Namespace)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Namespace)SetMeta(val *map[string]*string) {
+	if err := j.validateSetMetaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"meta",
 		val,
 	)
 }
@@ -723,6 +782,25 @@ func (n *jsiiProxy_Namespace) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_Namespace) PutCapabilities(value *NamespaceCapabilities) {
+	if err := n.validatePutCapabilitiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putCapabilities",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_Namespace) ResetCapabilities() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCapabilities",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_Namespace) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
@@ -735,6 +813,14 @@ func (n *jsiiProxy_Namespace) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Namespace) ResetMeta() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMeta",
 		nil, // no parameters
 	)
 }

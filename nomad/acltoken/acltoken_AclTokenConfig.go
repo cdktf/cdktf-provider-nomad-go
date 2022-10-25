@@ -23,6 +23,10 @@ type AclTokenConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_token#type AclToken#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
+	// Provides a TTL for the token in the form of a time duration such as "5m" or "1h".
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_token#expiration_ttl AclToken#expiration_ttl}
+	ExpirationTtl *string `field:"optional" json:"expirationTtl" yaml:"expirationTtl"`
 	// Whether the token should be replicated to all regions or not.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_token#global AclToken#global}
@@ -40,5 +44,9 @@ type AclTokenConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_token#policies AclToken#policies}
 	Policies *[]*string `field:"optional" json:"policies" yaml:"policies"`
+	// role block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_token#role AclToken#role}
+	Role interface{} `field:"optional" json:"role" yaml:"role"`
 }
 

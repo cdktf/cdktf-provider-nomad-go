@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/nomad/d/namespace nomad_namespace}.
 type DataNomadNamespace interface {
 	cdktf.TerraformDataSource
+	Capabilities() DataNomadNamespaceCapabilitiesList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -40,6 +41,7 @@ type DataNomadNamespace interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Meta() cdktf.StringMap
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -100,6 +102,16 @@ type DataNomadNamespace interface {
 // The jsii proxy struct for DataNomadNamespace
 type jsiiProxy_DataNomadNamespace struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataNomadNamespace) Capabilities() DataNomadNamespaceCapabilitiesList {
+	var returns DataNomadNamespaceCapabilitiesList
+	_jsii_.Get(
+		j,
+		"capabilities",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataNomadNamespace) CdktfStack() cdktf.TerraformStack {
@@ -207,6 +219,16 @@ func (j *jsiiProxy_DataNomadNamespace) Lifecycle() *cdktf.TerraformResourceLifec
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNomadNamespace) Meta() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"meta",
 		&returns,
 	)
 	return returns

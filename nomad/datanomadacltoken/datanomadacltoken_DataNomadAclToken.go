@@ -28,6 +28,8 @@ type DataNomadAclToken interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExpirationTime() *string
+	ExpirationTtl() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,6 +56,7 @@ type DataNomadAclToken interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Roles() DataNomadAclTokenRolesList
 	SecretId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -176,6 +179,26 @@ func (j *jsiiProxy_DataNomadAclToken) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataNomadAclToken) ExpirationTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNomadAclToken) ExpirationTtl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationTtl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNomadAclToken) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -291,6 +314,16 @@ func (j *jsiiProxy_DataNomadAclToken) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNomadAclToken) Roles() DataNomadAclTokenRolesList {
+	var returns DataNomadAclTokenRolesList
+	_jsii_.Get(
+		j,
+		"roles",
 		&returns,
 	)
 	return returns

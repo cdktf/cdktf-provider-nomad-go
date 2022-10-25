@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package namespace
 
@@ -53,6 +52,10 @@ func (n *jsiiProxy_Namespace) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (n *jsiiProxy_Namespace) validatePutCapabilitiesParameters(value *NamespaceCapabilities) error {
+	return nil
+}
+
 func validateNamespace_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -70,6 +73,10 @@ func (j *jsiiProxy_Namespace) validateSetIdParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Namespace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_Namespace) validateSetMetaParameters(val *map[string]*string) error {
 	return nil
 }
 

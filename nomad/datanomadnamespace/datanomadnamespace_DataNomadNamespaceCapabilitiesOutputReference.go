@@ -2,9 +2,9 @@ package datanomadnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v2/jsii"
 
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v2/datanomadnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

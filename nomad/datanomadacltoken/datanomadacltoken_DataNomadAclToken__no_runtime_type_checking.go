@@ -56,6 +56,14 @@ func validateDataNomadAclToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataNomadAclToken_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataNomadAclToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNomadAclToken) validateSetAccessorIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataNomadDeployments_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataNomadDeployments_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataNomadDeployments_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNomadDeployments) validateSetIdParameters(val *string) error {
 	return nil
 }

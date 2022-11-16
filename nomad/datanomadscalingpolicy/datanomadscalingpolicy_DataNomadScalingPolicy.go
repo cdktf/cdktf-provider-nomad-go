@@ -2,10 +2,10 @@ package datanomadscalingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v2/datanomadscalingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -434,6 +434,44 @@ func DataNomadScalingPolicy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataNomadScalingPolicy_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataNomadScalingPolicy_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataNomadScalingPolicy_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataNomadScalingPolicy_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

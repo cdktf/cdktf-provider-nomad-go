@@ -39,6 +39,22 @@ func validateNomadProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNomadProvider_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateNomadProvider_IsTerraformProviderParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NomadProvider) validateSetHeadersParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:

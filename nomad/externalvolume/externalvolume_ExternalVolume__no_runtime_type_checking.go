@@ -68,6 +68,14 @@ func validateExternalVolume_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateExternalVolume_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateExternalVolume_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ExternalVolume) validateSetCapacityMaxParameters(val *string) error {
 	return nil
 }

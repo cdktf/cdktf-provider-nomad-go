@@ -2,10 +2,10 @@ package quotaspecification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v2/quotaspecification/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -511,6 +511,44 @@ func QuotaSpecification_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nomad.quotaSpecification.QuotaSpecification",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func QuotaSpecification_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateQuotaSpecification_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-nomad.quotaSpecification.QuotaSpecification",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func QuotaSpecification_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateQuotaSpecification_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-nomad.quotaSpecification.QuotaSpecification",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

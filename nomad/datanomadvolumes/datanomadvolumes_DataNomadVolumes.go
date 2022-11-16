@@ -2,10 +2,10 @@ package datanomadvolumes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvolumes/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v2/datanomadvolumes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -520,6 +520,44 @@ func DataNomadVolumes_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataNomadVolumes_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataNomadVolumes_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataNomadVolumes_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataNomadVolumes_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

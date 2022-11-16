@@ -60,6 +60,14 @@ func validateAclRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAclRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAclRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AclRole) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

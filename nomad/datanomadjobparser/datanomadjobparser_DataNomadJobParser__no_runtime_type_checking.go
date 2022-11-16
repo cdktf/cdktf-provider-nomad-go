@@ -56,6 +56,14 @@ func validateDataNomadJobParser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataNomadJobParser_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataNomadJobParser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNomadJobParser) validateSetCanonicalizeParameters(val interface{}) error {
 	return nil
 }

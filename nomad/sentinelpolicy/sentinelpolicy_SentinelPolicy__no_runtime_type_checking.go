@@ -56,6 +56,14 @@ func validateSentinelPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSentinelPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSentinelPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SentinelPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

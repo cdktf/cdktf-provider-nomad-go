@@ -16,6 +16,14 @@ func validateNomadProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNomadProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNomadProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadProvider) validateSetHeadersParameters(val interface{}) error {
 	return nil
 }

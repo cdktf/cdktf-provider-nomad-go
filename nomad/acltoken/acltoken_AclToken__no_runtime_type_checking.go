@@ -60,6 +60,14 @@ func validateAclToken_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAclToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAclToken_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AclToken) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

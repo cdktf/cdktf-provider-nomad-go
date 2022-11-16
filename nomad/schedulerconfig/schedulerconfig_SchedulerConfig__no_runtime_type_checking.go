@@ -56,6 +56,14 @@ func validateSchedulerConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSchedulerConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSchedulerConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchedulerConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

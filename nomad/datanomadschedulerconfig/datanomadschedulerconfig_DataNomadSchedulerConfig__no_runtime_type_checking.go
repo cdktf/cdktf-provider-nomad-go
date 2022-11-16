@@ -56,6 +56,14 @@ func validateDataNomadSchedulerConfig_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataNomadSchedulerConfig_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataNomadSchedulerConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNomadSchedulerConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

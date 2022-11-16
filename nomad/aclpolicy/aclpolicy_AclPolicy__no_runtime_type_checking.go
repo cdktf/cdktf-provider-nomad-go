@@ -56,6 +56,14 @@ func validateAclPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAclPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAclPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AclPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

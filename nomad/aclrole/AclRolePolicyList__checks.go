@@ -28,6 +28,8 @@ func (a *jsiiProxy_AclRolePolicyList) validateResolveParameters(_context cdktf.I
 
 func (j *jsiiProxy_AclRolePolicyList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *[]*AclRolePolicy:
 		val := val.(*[]*AclRolePolicy)
 		for idx_97dfc6, v := range *val {
@@ -43,11 +45,9 @@ func (j *jsiiProxy_AclRolePolicyList) validateSetInternalValueParameters(val int
 				return err
 			}
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *[]*AclRolePolicy, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*AclRolePolicy; received %#v (a %T)", val, val)
 		}
 	}
 

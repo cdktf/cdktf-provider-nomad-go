@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role nomad_acl_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role nomad_acl_role}.
 type AclRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AclRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role nomad_acl_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role nomad_acl_role} Resource.
 func NewAclRole(scope constructs.Construct, id *string, config *AclRoleConfig) AclRole {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAclRole(scope constructs.Construct, id *string, config *AclRoleConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role nomad_acl_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role nomad_acl_role} Resource.
 func NewAclRole_Override(a AclRole, scope constructs.Construct, id *string, config *AclRoleConfig) {
 	_init_.Initialize()
 

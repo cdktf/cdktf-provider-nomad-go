@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/namespace nomad_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace nomad_namespace}.
 type Namespace interface {
 	cdktf.TerraformResource
 	Capabilities() NamespaceCapabilitiesOutputReference
@@ -405,7 +405,7 @@ func (j *jsiiProxy_Namespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/namespace nomad_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace nomad_namespace} Resource.
 func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfig) Namespace {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/namespace nomad_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace nomad_namespace} Resource.
 func NewNamespace_Override(n Namespace, scope constructs.Construct, id *string, config *NamespaceConfig) {
 	_init_.Initialize()
 

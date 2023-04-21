@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/deployments nomad_deployments}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/deployments nomad_deployments}.
 type DataNomadDeployments interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataNomadDeployments) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/deployments nomad_deployments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/deployments nomad_deployments} Data Source.
 func NewDataNomadDeployments(scope constructs.Construct, id *string, config *DataNomadDeploymentsConfig) DataNomadDeployments {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataNomadDeployments(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/deployments nomad_deployments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/deployments nomad_deployments} Data Source.
 func NewDataNomadDeployments_Override(d DataNomadDeployments, scope constructs.Construct, id *string, config *DataNomadDeploymentsConfig) {
 	_init_.Initialize()
 

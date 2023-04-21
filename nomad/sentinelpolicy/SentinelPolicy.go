@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy nomad_sentinel_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/sentinel_policy nomad_sentinel_policy}.
 type SentinelPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_SentinelPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy nomad_sentinel_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/sentinel_policy nomad_sentinel_policy} Resource.
 func NewSentinelPolicy(scope constructs.Construct, id *string, config *SentinelPolicyConfig) SentinelPolicy {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewSentinelPolicy(scope constructs.Construct, id *string, config *SentinelP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy nomad_sentinel_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/sentinel_policy nomad_sentinel_policy} Resource.
 func NewSentinelPolicy_Override(s SentinelPolicy, scope constructs.Construct, id *string, config *SentinelPolicyConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/quota_specification nomad_quota_specification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification nomad_quota_specification}.
 type QuotaSpecification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_QuotaSpecification) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/quota_specification nomad_quota_specification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification nomad_quota_specification} Resource.
 func NewQuotaSpecification(scope constructs.Construct, id *string, config *QuotaSpecificationConfig) QuotaSpecification {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewQuotaSpecification(scope constructs.Construct, id *string, config *Quota
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/quota_specification nomad_quota_specification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification nomad_quota_specification} Resource.
 func NewQuotaSpecification_Override(q QuotaSpecification, scope constructs.Construct, id *string, config *QuotaSpecificationConfig) {
 	_init_.Initialize()
 

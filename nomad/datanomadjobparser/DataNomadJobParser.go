@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/job_parser nomad_job_parser}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser nomad_job_parser}.
 type DataNomadJobParser interface {
 	cdktf.TerraformDataSource
 	Canonicalize() interface{}
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataNomadJobParser) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/job_parser nomad_job_parser} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser nomad_job_parser} Data Source.
 func NewDataNomadJobParser(scope constructs.Construct, id *string, config *DataNomadJobParserConfig) DataNomadJobParser {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataNomadJobParser(scope constructs.Construct, id *string, config *DataN
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/job_parser nomad_job_parser} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser nomad_job_parser} Data Source.
 func NewDataNomadJobParser_Override(d DataNomadJobParser, scope constructs.Construct, id *string, config *DataNomadJobParserConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scheduler_config nomad_scheduler_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scheduler_config nomad_scheduler_config}.
 type DataNomadSchedulerConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -291,7 +291,7 @@ func (j *jsiiProxy_DataNomadSchedulerConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scheduler_config nomad_scheduler_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scheduler_config nomad_scheduler_config} Data Source.
 func NewDataNomadSchedulerConfig(scope constructs.Construct, id *string, config *DataNomadSchedulerConfigConfig) DataNomadSchedulerConfig {
 	_init_.Initialize()
 
@@ -309,7 +309,7 @@ func NewDataNomadSchedulerConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scheduler_config nomad_scheduler_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scheduler_config nomad_scheduler_config} Data Source.
 func NewDataNomadSchedulerConfig_Override(d DataNomadSchedulerConfig, scope constructs.Construct, id *string, config *DataNomadSchedulerConfigConfig) {
 	_init_.Initialize()
 

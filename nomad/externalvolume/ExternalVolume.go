@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume nomad_external_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume nomad_external_volume}.
 type ExternalVolume interface {
 	cdktf.TerraformResource
 	Capability() ExternalVolumeCapabilityList
@@ -717,7 +717,7 @@ func (j *jsiiProxy_ExternalVolume) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume nomad_external_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume nomad_external_volume} Resource.
 func NewExternalVolume(scope constructs.Construct, id *string, config *ExternalVolumeConfig) ExternalVolume {
 	_init_.Initialize()
 
@@ -735,7 +735,7 @@ func NewExternalVolume(scope constructs.Construct, id *string, config *ExternalV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume nomad_external_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume nomad_external_volume} Resource.
 func NewExternalVolume_Override(e ExternalVolume, scope constructs.Construct, id *string, config *ExternalVolumeConfig) {
 	_init_.Initialize()
 

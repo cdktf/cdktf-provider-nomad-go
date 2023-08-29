@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datanomadplugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/datanomadplugin/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadplugin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

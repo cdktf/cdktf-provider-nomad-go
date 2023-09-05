@@ -5,14 +5,14 @@ package schedulerconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/schedulerconfig/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/schedulerconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config nomad_scheduler_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/scheduler_config nomad_scheduler_config}.
 type SchedulerConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -361,7 +361,7 @@ func (j *jsiiProxy_SchedulerConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config nomad_scheduler_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/scheduler_config nomad_scheduler_config} Resource.
 func NewSchedulerConfig(scope constructs.Construct, id *string, config *SchedulerConfigConfig) SchedulerConfig {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewSchedulerConfig(scope constructs.Construct, id *string, config *Schedule
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config nomad_scheduler_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/scheduler_config nomad_scheduler_config} Resource.
 func NewSchedulerConfig_Override(s SchedulerConfig, scope constructs.Construct, id *string, config *SchedulerConfigConfig) {
 	_init_.Initialize()
 

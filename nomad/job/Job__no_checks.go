@@ -99,6 +99,10 @@ func (j *jsiiProxy_Job) validateSetDetachParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Job) validateSetHcl1Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -124,6 +128,10 @@ func (j *jsiiProxy_Job) validateSetProvisionersParameters(val *[]interface{}) er
 }
 
 func (j *jsiiProxy_Job) validateSetPurgeOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Job) validateSetReadAllocationIdsParameters(val interface{}) error {
 	return nil
 }
 

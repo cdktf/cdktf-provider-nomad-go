@@ -5,14 +5,14 @@ package aclpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/aclpolicy/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/aclpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy nomad_acl_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy nomad_acl_policy}.
 type AclPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,8 @@ type AclPolicy interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	JobAcl() AclPolicyJobAclOutputReference
+	JobAclInput() *AclPolicyJobAcl
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -98,8 +100,10 @@ type AclPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutJobAcl(value *AclPolicyJobAcl)
 	ResetDescription()
 	ResetId()
+	ResetJobAcl()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -238,6 +242,26 @@ func (j *jsiiProxy_AclPolicy) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AclPolicy) JobAcl() AclPolicyJobAclOutputReference {
+	var returns AclPolicyJobAclOutputReference
+	_jsii_.Get(
+		j,
+		"jobAcl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclPolicy) JobAclInput() *AclPolicyJobAcl {
+	var returns *AclPolicyJobAcl
+	_jsii_.Get(
+		j,
+		"jobAclInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AclPolicy) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -359,7 +383,7 @@ func (j *jsiiProxy_AclPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy nomad_acl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy nomad_acl_policy} Resource.
 func NewAclPolicy(scope constructs.Construct, id *string, config *AclPolicyConfig) AclPolicy {
 	_init_.Initialize()
 
@@ -377,7 +401,7 @@ func NewAclPolicy(scope constructs.Construct, id *string, config *AclPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy nomad_acl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy nomad_acl_policy} Resource.
 func NewAclPolicy_Override(a AclPolicy, scope constructs.Construct, id *string, config *AclPolicyConfig) {
 	_init_.Initialize()
 
@@ -766,6 +790,17 @@ func (a *jsiiProxy_AclPolicy) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AclPolicy) PutJobAcl(value *AclPolicyJobAcl) {
+	if err := a.validatePutJobAclParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putJobAcl",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AclPolicy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
@@ -778,6 +813,14 @@ func (a *jsiiProxy_AclPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclPolicy) ResetJobAcl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJobAcl",
 		nil, // no parameters
 	)
 }

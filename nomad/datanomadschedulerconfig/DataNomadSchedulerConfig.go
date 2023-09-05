@@ -5,14 +5,14 @@ package datanomadschedulerconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadschedulerconfig/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomadschedulerconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scheduler_config nomad_scheduler_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/scheduler_config nomad_scheduler_config}.
 type DataNomadSchedulerConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -294,7 +294,7 @@ func (j *jsiiProxy_DataNomadSchedulerConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scheduler_config nomad_scheduler_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/scheduler_config nomad_scheduler_config} Data Source.
 func NewDataNomadSchedulerConfig(scope constructs.Construct, id *string, config *DataNomadSchedulerConfigConfig) DataNomadSchedulerConfig {
 	_init_.Initialize()
 
@@ -312,7 +312,7 @@ func NewDataNomadSchedulerConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scheduler_config nomad_scheduler_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/scheduler_config nomad_scheduler_config} Data Source.
 func NewDataNomadSchedulerConfig_Override(d DataNomadSchedulerConfig, scope constructs.Construct, id *string, config *DataNomadSchedulerConfigConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/provider/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs nomad}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs nomad}.
 type NomadProvider interface {
 	cdktf.TerraformProvider
 	Address() *string
@@ -71,6 +71,9 @@ type NomadProvider interface {
 	SecretId() *string
 	SetSecretId(val *string)
 	SecretIdInput() *string
+	SkipVerify() interface{}
+	SetSkipVerify(val interface{})
+	SkipVerifyInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -101,6 +104,7 @@ type NomadProvider interface {
 	ResetOverrideLogicalId()
 	ResetRegion()
 	ResetSecretId()
+	ResetSkipVerify()
 	ResetVaultToken()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -467,6 +471,26 @@ func (j *jsiiProxy_NomadProvider) SecretIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NomadProvider) SkipVerify() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipVerify",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadProvider) SkipVerifyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipVerifyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NomadProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -518,7 +542,7 @@ func (j *jsiiProxy_NomadProvider) VaultTokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs nomad} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs nomad} Resource.
 func NewNomadProvider(scope constructs.Construct, id *string, config *NomadProviderConfig) NomadProvider {
 	_init_.Initialize()
 
@@ -536,7 +560,7 @@ func NewNomadProvider(scope constructs.Construct, id *string, config *NomadProvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs nomad} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs nomad} Resource.
 func NewNomadProvider_Override(n NomadProvider, scope constructs.Construct, id *string, config *NomadProviderConfig) {
 	_init_.Initialize()
 
@@ -661,6 +685,17 @@ func (j *jsiiProxy_NomadProvider)SetSecretId(val *string) {
 	_jsii_.Set(
 		j,
 		"secretId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NomadProvider)SetSkipVerify(val interface{}) {
+	if err := j.validateSetSkipVerifyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipVerify",
 		val,
 	)
 }
@@ -887,6 +922,14 @@ func (n *jsiiProxy_NomadProvider) ResetSecretId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetSecretId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NomadProvider) ResetSkipVerify() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSkipVerify",
 		nil, // no parameters
 	)
 }

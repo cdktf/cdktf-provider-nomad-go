@@ -5,14 +5,14 @@ package aclbindingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/aclbindingrule/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/aclbindingrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule nomad_acl_binding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule nomad_acl_binding_rule}.
 type AclBindingRule interface {
 	cdktf.TerraformResource
 	AuthMethod() *string
@@ -104,6 +104,7 @@ type AclBindingRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetBindName()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -406,7 +407,7 @@ func (j *jsiiProxy_AclBindingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource.
 func NewAclBindingRule(scope constructs.Construct, id *string, config *AclBindingRuleConfig) AclBindingRule {
 	_init_.Initialize()
 
@@ -424,7 +425,7 @@ func NewAclBindingRule(scope constructs.Construct, id *string, config *AclBindin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource.
 func NewAclBindingRule_Override(a AclBindingRule, scope constructs.Construct, id *string, config *AclBindingRuleConfig) {
 	_init_.Initialize()
 
@@ -832,6 +833,14 @@ func (a *jsiiProxy_AclBindingRule) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AclBindingRule) ResetBindName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBindName",
+		nil, // no parameters
 	)
 }
 

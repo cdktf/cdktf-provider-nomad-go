@@ -35,6 +35,10 @@ func (j *jsiiProxy_NomadProvider) validateSetIgnoreEnvVarsParameters(val *map[st
 	return nil
 }
 
+func (j *jsiiProxy_NomadProvider) validateSetSkipVerifyParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewNomadProviderParameters(scope constructs.Construct, id *string, config *NomadProviderConfig) error {
 	return nil
 }

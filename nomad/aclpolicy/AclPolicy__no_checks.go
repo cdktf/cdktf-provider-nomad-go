@@ -55,6 +55,10 @@ func (a *jsiiProxy_AclPolicy) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (a *jsiiProxy_AclPolicy) validatePutJobAclParameters(value *AclPolicyJobAcl) error {
+	return nil
+}
+
 func validateAclPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

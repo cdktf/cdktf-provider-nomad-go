@@ -5,14 +5,14 @@ package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/job/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/job/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job nomad_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job nomad_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AllocationIds() *[]*string
@@ -55,6 +55,9 @@ type Job interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Hcl1() interface{}
+	SetHcl1(val interface{})
+	Hcl1Input() interface{}
 	Hcl2() JobHcl2OutputReference
 	Hcl2Input() *JobHcl2
 	Id() *string
@@ -91,6 +94,9 @@ type Job interface {
 	PurgeOnDestroyInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	ReadAllocationIds() interface{}
+	SetReadAllocationIds(val interface{})
+	ReadAllocationIdsInput() interface{}
 	Region() *string
 	TaskGroups() JobTaskGroupsList
 	// Experimental.
@@ -136,6 +142,7 @@ type Job interface {
 	ResetDeregisterOnDestroy()
 	ResetDeregisterOnIdChange()
 	ResetDetach()
+	ResetHcl1()
 	ResetHcl2()
 	ResetId()
 	ResetJson()
@@ -144,6 +151,7 @@ type Job interface {
 	ResetOverrideLogicalId()
 	ResetPolicyOverride()
 	ResetPurgeOnDestroy()
+	ResetReadAllocationIds()
 	ResetTimeouts()
 	ResetVaultToken()
 	SynthesizeAttributes() *map[string]interface{}
@@ -361,6 +369,26 @@ func (j *jsiiProxy_Job) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Job) Hcl1() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hcl1",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) Hcl1Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hcl1Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Job) Hcl2() JobHcl2OutputReference {
 	var returns JobHcl2OutputReference
 	_jsii_.Get(
@@ -561,6 +589,26 @@ func (j *jsiiProxy_Job) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Job) ReadAllocationIds() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readAllocationIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Job) ReadAllocationIdsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readAllocationIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Job) Region() *string {
 	var returns *string
 	_jsii_.Get(
@@ -662,7 +710,7 @@ func (j *jsiiProxy_Job) VaultTokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job nomad_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job nomad_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -680,7 +728,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job nomad_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job nomad_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -773,6 +821,17 @@ func (j *jsiiProxy_Job)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_Job)SetHcl1(val interface{}) {
+	if err := j.validateSetHcl1Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hcl1",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Job)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -854,6 +913,17 @@ func (j *jsiiProxy_Job)SetPurgeOnDestroy(val interface{}) {
 	_jsii_.Set(
 		j,
 		"purgeOnDestroy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Job)SetReadAllocationIds(val interface{}) {
+	if err := j.validateSetReadAllocationIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readAllocationIds",
 		val,
 	)
 }
@@ -1189,6 +1259,14 @@ func (j *jsiiProxy_Job) ResetDetach() {
 	)
 }
 
+func (j *jsiiProxy_Job) ResetHcl1() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetHcl1",
+		nil, // no parameters
+	)
+}
+
 func (j *jsiiProxy_Job) ResetHcl2() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1233,6 +1311,14 @@ func (j *jsiiProxy_Job) ResetPurgeOnDestroy() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetPurgeOnDestroy",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_Job) ResetReadAllocationIds() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetReadAllocationIds",
 		nil, // no parameters
 	)
 }

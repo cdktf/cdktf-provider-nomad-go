@@ -5,14 +5,14 @@ package namespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/namespace/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/namespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace nomad_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace nomad_namespace}.
 type Namespace interface {
 	cdktf.TerraformResource
 	Capabilities() NamespaceCapabilitiesOutputReference
@@ -59,6 +59,8 @@ type Namespace interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodePoolConfig() NamespaceNodePoolConfigOutputReference
+	NodePoolConfigInput() *NamespaceNodePoolConfig
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -104,10 +106,12 @@ type Namespace interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCapabilities(value *NamespaceCapabilities)
+	PutNodePoolConfig(value *NamespaceNodePoolConfig)
 	ResetCapabilities()
 	ResetDescription()
 	ResetId()
 	ResetMeta()
+	ResetNodePoolConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -327,6 +331,26 @@ func (j *jsiiProxy_Namespace) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_Namespace) NodePoolConfig() NamespaceNodePoolConfigOutputReference {
+	var returns NamespaceNodePoolConfigOutputReference
+	_jsii_.Get(
+		j,
+		"nodePoolConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Namespace) NodePoolConfigInput() *NamespaceNodePoolConfig {
+	var returns *NamespaceNodePoolConfig
+	_jsii_.Get(
+		j,
+		"nodePoolConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Namespace) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -408,7 +432,7 @@ func (j *jsiiProxy_Namespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace nomad_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace nomad_namespace} Resource.
 func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfig) Namespace {
 	_init_.Initialize()
 
@@ -426,7 +450,7 @@ func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace nomad_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace nomad_namespace} Resource.
 func NewNamespace_Override(n Namespace, scope constructs.Construct, id *string, config *NamespaceConfig) {
 	_init_.Initialize()
 
@@ -837,6 +861,17 @@ func (n *jsiiProxy_Namespace) PutCapabilities(value *NamespaceCapabilities) {
 	)
 }
 
+func (n *jsiiProxy_Namespace) PutNodePoolConfig(value *NamespaceNodePoolConfig) {
+	if err := n.validatePutNodePoolConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putNodePoolConfig",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_Namespace) ResetCapabilities() {
 	_jsii_.InvokeVoid(
 		n,
@@ -865,6 +900,14 @@ func (n *jsiiProxy_Namespace) ResetMeta() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetMeta",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Namespace) ResetNodePoolConfig() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetNodePoolConfig",
 		nil, // no parameters
 	)
 }

@@ -59,6 +59,10 @@ func (n *jsiiProxy_Namespace) validatePutCapabilitiesParameters(value *Namespace
 	return nil
 }
 
+func (n *jsiiProxy_Namespace) validatePutNodePoolConfigParameters(value *NamespaceNodePoolConfig) error {
+	return nil
+}
+
 func validateNamespace_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package quotaspecification
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QuotaSpecification) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuotaSpecification) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (q *jsiiProxy_QuotaSpecification) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (q *jsiiProxy_QuotaSpecification) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuotaSpecification) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QuotaSpecification) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (q *jsiiProxy_QuotaSpecification) validateOverrideLogicalIdParameters(newLo
 }
 
 func (q *jsiiProxy_QuotaSpecification) validatePutLimitsParameters(value interface{}) error {
+	return nil
+}
+
+func validateQuotaSpecification_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

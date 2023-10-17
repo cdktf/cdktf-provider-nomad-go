@@ -7,6 +7,10 @@ package aclauthmethod
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AclAuthMethod) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AclAuthMethod) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AclAuthMethod) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (a *jsiiProxy_AclAuthMethod) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AclAuthMethod) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AclAuthMethod) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AclAuthMethod) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (a *jsiiProxy_AclAuthMethod) validatePutConfigParameters(value *AclAuthMethodConfigA) error {
+	return nil
+}
+
+func validateAclAuthMethod_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

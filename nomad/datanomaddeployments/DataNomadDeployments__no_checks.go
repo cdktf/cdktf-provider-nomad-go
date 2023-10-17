@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataNomadDeployments) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func validateDataNomadDeployments_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataNomadDeployments_IsConstructParameters(x interface{}) error {
 	return nil
 }

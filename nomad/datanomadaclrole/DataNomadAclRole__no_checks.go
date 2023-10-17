@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataNomadAclRole) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func validateDataNomadAclRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataNomadAclRole_IsConstructParameters(x interface{}) error {
 	return nil
 }

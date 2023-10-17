@@ -5,10 +5,10 @@ package datanomadscalingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomadscalingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadscalingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -410,6 +410,25 @@ func (j *jsiiProxy_DataNomadScalingPolicy)SetProvider(val cdktf.TerraformProvide
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataNomadScalingPolicy resource upon running "cdktf plan <stack-name>".
+func DataNomadScalingPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataNomadScalingPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

@@ -7,6 +7,10 @@ package aclrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AclRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AclRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AclRole) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (a *jsiiProxy_AclRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AclRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AclRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AclRole) validateOverrideLogicalIdParameters(newLogicalId *st
 }
 
 func (a *jsiiProxy_AclRole) validatePutPolicyParameters(value interface{}) error {
+	return nil
+}
+
+func validateAclRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

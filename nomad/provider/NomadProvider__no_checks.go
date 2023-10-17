@@ -15,6 +15,10 @@ func (n *jsiiProxy_NomadProvider) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func validateNomadProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateNomadProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

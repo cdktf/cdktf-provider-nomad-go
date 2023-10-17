@@ -7,6 +7,10 @@ package externalvolume
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ExternalVolume) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExternalVolume) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_ExternalVolume) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (e *jsiiProxy_ExternalVolume) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ExternalVolume) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ExternalVolume) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (e *jsiiProxy_ExternalVolume) validatePutMountOptionsParameters(value *Exte
 }
 
 func (e *jsiiProxy_ExternalVolume) validatePutTopologyRequestParameters(value *ExternalVolumeTopologyRequest) error {
+	return nil
+}
+
+func validateExternalVolume_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

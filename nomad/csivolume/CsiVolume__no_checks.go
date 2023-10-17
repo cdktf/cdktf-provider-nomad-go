@@ -7,6 +7,10 @@ package csivolume
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CsiVolume) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CsiVolume) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CsiVolume) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (c *jsiiProxy_CsiVolume) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CsiVolume) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CsiVolume) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_CsiVolume) validatePutTimeoutsParameters(value *CsiVolumeTime
 }
 
 func (c *jsiiProxy_CsiVolume) validatePutTopologyRequestParameters(value *CsiVolumeTopologyRequest) error {
+	return nil
+}
+
+func validateCsiVolume_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

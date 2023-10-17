@@ -7,6 +7,10 @@ package nodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NodePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NodePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NodePool) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (n *jsiiProxy_NodePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NodePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NodePool) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (n *jsiiProxy_NodePool) validatePutSchedulerConfigParameters(value *NodePoolSchedulerConfig) error {
+	return nil
+}
+
+func validateNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

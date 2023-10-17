@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataNomadNodePool) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataNomadNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataNomadNodePool_IsConstructParameters(x interface{}) error {
 	return nil
 }

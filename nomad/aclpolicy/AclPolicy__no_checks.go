@@ -7,6 +7,10 @@ package aclpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AclPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AclPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AclPolicy) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (a *jsiiProxy_AclPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AclPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AclPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AclPolicy) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (a *jsiiProxy_AclPolicy) validatePutJobAclParameters(value *AclPolicyJobAcl) error {
+	return nil
+}
+
+func validateAclPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

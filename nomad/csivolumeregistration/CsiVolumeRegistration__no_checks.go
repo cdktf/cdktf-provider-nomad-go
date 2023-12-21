@@ -59,7 +59,15 @@ func (c *jsiiProxy_CsiVolumeRegistration) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CsiVolumeRegistration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CsiVolumeRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CsiVolumeRegistration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -96,6 +104,14 @@ func validateCsiVolumeRegistration_IsTerraformElementParameters(x interface{}) e
 }
 
 func validateCsiVolumeRegistration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CsiVolumeRegistration) validateSetCapacityMaxParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CsiVolumeRegistration) validateSetCapacityMinParameters(val *string) error {
 	return nil
 }
 

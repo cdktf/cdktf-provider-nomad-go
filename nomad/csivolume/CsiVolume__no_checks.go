@@ -59,7 +59,15 @@ func (c *jsiiProxy_CsiVolume) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (c *jsiiProxy_CsiVolume) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CsiVolume) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CsiVolume) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

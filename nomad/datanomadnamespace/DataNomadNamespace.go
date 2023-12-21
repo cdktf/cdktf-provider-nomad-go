@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace nomad_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/namespace nomad_namespace}.
 type DataNomadNamespace interface {
 	cdktf.TerraformDataSource
 	Capabilities() DataNomadNamespaceCapabilitiesList
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataNomadNamespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace nomad_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/namespace nomad_namespace} Data Source.
 func NewDataNomadNamespace(scope constructs.Construct, id *string, config *DataNomadNamespaceConfig) DataNomadNamespace {
 	_init_.Initialize()
 
@@ -357,7 +357,7 @@ func NewDataNomadNamespace(scope constructs.Construct, id *string, config *DataN
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace nomad_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/namespace nomad_namespace} Data Source.
 func NewDataNomadNamespace_Override(d DataNomadNamespace, scope constructs.Construct, id *string, config *DataNomadNamespaceConfig) {
 	_init_.Initialize()
 

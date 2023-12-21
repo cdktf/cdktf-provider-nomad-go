@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_auth_method nomad_acl_auth_method}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_auth_method nomad_acl_auth_method}.
 type AclAuthMethod interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -78,6 +78,9 @@ type AclAuthMethod interface {
 	TokenLocality() *string
 	SetTokenLocality(val *string)
 	TokenLocalityInput() *string
+	TokenNameFormat() *string
+	SetTokenNameFormat(val *string)
+	TokenNameFormatInput() *string
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -105,12 +108,22 @@ type AclAuthMethod interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -120,6 +133,7 @@ type AclAuthMethod interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTokenNameFormat()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -415,6 +429,26 @@ func (j *jsiiProxy_AclAuthMethod) TokenLocalityInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AclAuthMethod) TokenNameFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenNameFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethod) TokenNameFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenNameFormatInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AclAuthMethod) Type() *string {
 	var returns *string
 	_jsii_.Get(
@@ -436,7 +470,7 @@ func (j *jsiiProxy_AclAuthMethod) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_auth_method nomad_acl_auth_method} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_auth_method nomad_acl_auth_method} Resource.
 func NewAclAuthMethod(scope constructs.Construct, id *string, config *AclAuthMethodConfig) AclAuthMethod {
 	_init_.Initialize()
 
@@ -454,7 +488,7 @@ func NewAclAuthMethod(scope constructs.Construct, id *string, config *AclAuthMet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_auth_method nomad_acl_auth_method} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_auth_method nomad_acl_auth_method} Resource.
 func NewAclAuthMethod_Override(a AclAuthMethod, scope constructs.Construct, id *string, config *AclAuthMethodConfig) {
 	_init_.Initialize()
 
@@ -584,6 +618,17 @@ func (j *jsiiProxy_AclAuthMethod)SetTokenLocality(val *string) {
 	_jsii_.Set(
 		j,
 		"tokenLocality",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AclAuthMethod)SetTokenNameFormat(val *string) {
+	if err := j.validateSetTokenNameFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenNameFormat",
 		val,
 	)
 }
@@ -868,6 +913,19 @@ func (a *jsiiProxy_AclAuthMethod) GetStringMapAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (a *jsiiProxy_AclAuthMethod) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AclAuthMethod) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -895,6 +953,17 @@ func (a *jsiiProxy_AclAuthMethod) InterpolationForAttribute(terraformAttribute *
 	return returns
 }
 
+func (a *jsiiProxy_AclAuthMethod) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AclAuthMethod) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -903,6 +972,17 @@ func (a *jsiiProxy_AclAuthMethod) MoveTo(moveTarget *string, index interface{}) 
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethod) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -948,6 +1028,14 @@ func (a *jsiiProxy_AclAuthMethod) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethod) ResetTokenNameFormat() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTokenNameFormat",
 		nil, // no parameters
 	)
 }

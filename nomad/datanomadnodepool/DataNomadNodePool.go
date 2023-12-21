@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/node_pool nomad_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/node_pool nomad_node_pool}.
 type DataNomadNodePool interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataNomadNodePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/node_pool nomad_node_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/node_pool nomad_node_pool} Data Source.
 func NewDataNomadNodePool(scope constructs.Construct, id *string, config *DataNomadNodePoolConfig) DataNomadNodePool {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataNomadNodePool(scope constructs.Construct, id *string, config *DataNo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/node_pool nomad_node_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/node_pool nomad_node_pool} Data Source.
 func NewDataNomadNodePool_Override(d DataNomadNodePool, scope constructs.Construct, id *string, config *DataNomadNodePoolConfig) {
 	_init_.Initialize()
 

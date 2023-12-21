@@ -59,7 +59,15 @@ func (a *jsiiProxy_AclBindingRule) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AclBindingRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AclBindingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AclBindingRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

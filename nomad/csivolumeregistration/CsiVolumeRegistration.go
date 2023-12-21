@@ -12,11 +12,20 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration nomad_csi_volume_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration nomad_csi_volume_registration}.
 type CsiVolumeRegistration interface {
 	cdktf.TerraformResource
 	Capability() CsiVolumeRegistrationCapabilityList
 	CapabilityInput() interface{}
+	Capacity() *float64
+	CapacityMax() *string
+	SetCapacityMax(val *string)
+	CapacityMaxBytes() *float64
+	CapacityMaxInput() *string
+	CapacityMin() *string
+	SetCapacityMin(val *string)
+	CapacityMinBytes() *float64
+	CapacityMinInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -132,12 +141,22 @@ type CsiVolumeRegistration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -146,6 +165,8 @@ type CsiVolumeRegistration interface {
 	PutTimeouts(value *CsiVolumeRegistrationTimeouts)
 	PutTopologyRequest(value *CsiVolumeRegistrationTopologyRequest)
 	ResetCapability()
+	ResetCapacityMax()
+	ResetCapacityMin()
 	ResetContext()
 	ResetDeregisterOnDestroy()
 	ResetId()
@@ -188,6 +209,76 @@ func (j *jsiiProxy_CsiVolumeRegistration) CapabilityInput() interface{} {
 	_jsii_.Get(
 		j,
 		"capabilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsiVolumeRegistration) Capacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"capacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsiVolumeRegistration) CapacityMax() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"capacityMax",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsiVolumeRegistration) CapacityMaxBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"capacityMaxBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsiVolumeRegistration) CapacityMaxInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"capacityMaxInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsiVolumeRegistration) CapacityMin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"capacityMin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsiVolumeRegistration) CapacityMinBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"capacityMinBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsiVolumeRegistration) CapacityMinInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"capacityMinInput",
 		&returns,
 	)
 	return returns
@@ -704,7 +795,7 @@ func (j *jsiiProxy_CsiVolumeRegistration) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration nomad_csi_volume_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration nomad_csi_volume_registration} Resource.
 func NewCsiVolumeRegistration(scope constructs.Construct, id *string, config *CsiVolumeRegistrationConfig) CsiVolumeRegistration {
 	_init_.Initialize()
 
@@ -722,7 +813,7 @@ func NewCsiVolumeRegistration(scope constructs.Construct, id *string, config *Cs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration nomad_csi_volume_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration nomad_csi_volume_registration} Resource.
 func NewCsiVolumeRegistration_Override(c CsiVolumeRegistration, scope constructs.Construct, id *string, config *CsiVolumeRegistrationConfig) {
 	_init_.Initialize()
 
@@ -730,6 +821,28 @@ func NewCsiVolumeRegistration_Override(c CsiVolumeRegistration, scope constructs
 		"@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CsiVolumeRegistration)SetCapacityMax(val *string) {
+	if err := j.validateSetCapacityMaxParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"capacityMax",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CsiVolumeRegistration)SetCapacityMin(val *string) {
+	if err := j.validateSetCapacityMinParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"capacityMin",
+		val,
 	)
 }
 
@@ -1180,6 +1293,19 @@ func (c *jsiiProxy_CsiVolumeRegistration) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (c *jsiiProxy_CsiVolumeRegistration) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CsiVolumeRegistration) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1207,6 +1333,17 @@ func (c *jsiiProxy_CsiVolumeRegistration) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (c *jsiiProxy_CsiVolumeRegistration) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CsiVolumeRegistration) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1215,6 +1352,17 @@ func (c *jsiiProxy_CsiVolumeRegistration) MoveTo(moveTarget *string, index inter
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CsiVolumeRegistration) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1277,6 +1425,22 @@ func (c *jsiiProxy_CsiVolumeRegistration) ResetCapability() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetCapability",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CsiVolumeRegistration) ResetCapacityMax() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCapacityMax",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CsiVolumeRegistration) ResetCapacityMin() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCapacityMin",
 		nil, // no parameters
 	)
 }

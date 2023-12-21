@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/external_volume nomad_external_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/external_volume nomad_external_volume}.
 type ExternalVolume interface {
 	cdktf.TerraformResource
 	Capability() ExternalVolumeCapabilityList
@@ -136,12 +136,22 @@ type ExternalVolume interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -728,7 +738,7 @@ func (j *jsiiProxy_ExternalVolume) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/external_volume nomad_external_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/external_volume nomad_external_volume} Resource.
 func NewExternalVolume(scope constructs.Construct, id *string, config *ExternalVolumeConfig) ExternalVolume {
 	_init_.Initialize()
 
@@ -746,7 +756,7 @@ func NewExternalVolume(scope constructs.Construct, id *string, config *ExternalV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/external_volume nomad_external_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/external_volume nomad_external_volume} Resource.
 func NewExternalVolume_Override(e ExternalVolume, scope constructs.Construct, id *string, config *ExternalVolumeConfig) {
 	_init_.Initialize()
 
@@ -1226,6 +1236,19 @@ func (e *jsiiProxy_ExternalVolume) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (e *jsiiProxy_ExternalVolume) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_ExternalVolume) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1253,6 +1276,17 @@ func (e *jsiiProxy_ExternalVolume) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (e *jsiiProxy_ExternalVolume) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_ExternalVolume) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1261,6 +1295,17 @@ func (e *jsiiProxy_ExternalVolume) MoveTo(moveTarget *string, index interface{})
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_ExternalVolume) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -12,16 +12,19 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume nomad_csi_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume nomad_csi_volume}.
 type CsiVolume interface {
 	cdktf.TerraformResource
 	Capability() CsiVolumeCapabilityList
 	CapabilityInput() interface{}
+	Capacity() *float64
 	CapacityMax() *string
 	SetCapacityMax(val *string)
+	CapacityMaxBytes() *float64
 	CapacityMaxInput() *string
 	CapacityMin() *string
 	SetCapacityMin(val *string)
+	CapacityMinBytes() *float64
 	CapacityMinInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -45,6 +48,7 @@ type CsiVolume interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExternalId() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -135,12 +139,22 @@ type CsiVolume interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -197,11 +211,31 @@ func (j *jsiiProxy_CsiVolume) CapabilityInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CsiVolume) Capacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"capacity",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CsiVolume) CapacityMax() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"capacityMax",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsiVolume) CapacityMaxBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"capacityMaxBytes",
 		&returns,
 	)
 	return returns
@@ -222,6 +256,16 @@ func (j *jsiiProxy_CsiVolume) CapacityMin() *string {
 	_jsii_.Get(
 		j,
 		"capacityMin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsiVolume) CapacityMinBytes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"capacityMinBytes",
 		&returns,
 	)
 	return returns
@@ -332,6 +376,16 @@ func (j *jsiiProxy_CsiVolume) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CsiVolume) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
 		&returns,
 	)
 	return returns
@@ -728,7 +782,7 @@ func (j *jsiiProxy_CsiVolume) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume nomad_csi_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume nomad_csi_volume} Resource.
 func NewCsiVolume(scope constructs.Construct, id *string, config *CsiVolumeConfig) CsiVolume {
 	_init_.Initialize()
 
@@ -746,7 +800,7 @@ func NewCsiVolume(scope constructs.Construct, id *string, config *CsiVolumeConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume nomad_csi_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume nomad_csi_volume} Resource.
 func NewCsiVolume_Override(c CsiVolume, scope constructs.Construct, id *string, config *CsiVolumeConfig) {
 	_init_.Initialize()
 
@@ -1215,6 +1269,19 @@ func (c *jsiiProxy_CsiVolume) GetStringMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
+func (c *jsiiProxy_CsiVolume) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CsiVolume) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1242,6 +1309,17 @@ func (c *jsiiProxy_CsiVolume) InterpolationForAttribute(terraformAttribute *stri
 	return returns
 }
 
+func (c *jsiiProxy_CsiVolume) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CsiVolume) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1250,6 +1328,17 @@ func (c *jsiiProxy_CsiVolume) MoveTo(moveTarget *string, index interface{}) {
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CsiVolume) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/variable nomad_variable}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/variable nomad_variable}.
 type DataNomadVariable interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataNomadVariable) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/variable nomad_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/variable nomad_variable} Data Source.
 func NewDataNomadVariable(scope constructs.Construct, id *string, config *DataNomadVariableConfig) DataNomadVariable {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataNomadVariable(scope constructs.Construct, id *string, config *DataNo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/variable nomad_variable} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/variable nomad_variable} Data Source.
 func NewDataNomadVariable_Override(d DataNomadVariable, scope constructs.Construct, id *string, config *DataNomadVariableConfig) {
 	_init_.Initialize()
 

@@ -7,6 +7,10 @@ package csivolumeregistration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CsiVolumeRegistrationCapabilityList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CsiVolumeRegistrationCapabilityList) validateGetParameters(index *float64) error {
 	return nil
 }

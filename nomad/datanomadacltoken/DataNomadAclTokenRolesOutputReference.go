@@ -5,9 +5,9 @@ package datanomadacltoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadacltoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

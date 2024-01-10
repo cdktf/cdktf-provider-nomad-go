@@ -5,9 +5,9 @@ package job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job/internal"
+	"github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/job/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -29,6 +29,11 @@ type JobTaskGroupsList interface {
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) JobTaskGroupsOutputReference
@@ -156,6 +161,22 @@ func (j *jsiiProxy_JobTaskGroupsList)SetWrapsSet(val *bool) {
 		"wrapsSet",
 		val,
 	)
+}
+
+func (j *jsiiProxy_JobTaskGroupsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := j.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		j,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (j *jsiiProxy_JobTaskGroupsList) ComputeFqn() *string {

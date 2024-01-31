@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_policies nomad_acl_policies}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_policies nomad_acl_policies}.
 type DataNomadAclPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataNomadAclPolicies) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_policies nomad_acl_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_policies nomad_acl_policies} Data Source.
 func NewDataNomadAclPolicies(scope constructs.Construct, id *string, config *DataNomadAclPoliciesConfig) DataNomadAclPolicies {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataNomadAclPolicies(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_policies nomad_acl_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_policies nomad_acl_policies} Data Source.
 func NewDataNomadAclPolicies_Override(d DataNomadAclPolicies, scope constructs.Construct, id *string, config *DataNomadAclPoliciesConfig) {
 	_init_.Initialize()
 

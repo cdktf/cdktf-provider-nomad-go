@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles nomad_acl_roles}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_roles nomad_acl_roles}.
 type DataNomadAclRoles interface {
 	cdktf.TerraformDataSource
 	AclRoles() DataNomadAclRolesAclRolesList
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataNomadAclRoles) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles nomad_acl_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_roles nomad_acl_roles} Data Source.
 func NewDataNomadAclRoles(scope constructs.Construct, id *string, config *DataNomadAclRolesConfig) DataNomadAclRoles {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataNomadAclRoles(scope constructs.Construct, id *string, config *DataNo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles nomad_acl_roles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_roles nomad_acl_roles} Data Source.
 func NewDataNomadAclRoles_Override(d DataNomadAclRoles, scope constructs.Construct, id *string, config *DataNomadAclRolesConfig) {
 	_init_.Initialize()
 

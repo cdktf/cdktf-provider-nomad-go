@@ -7,7 +7,7 @@ package volume
 type VolumeTopologyRequestRequired struct {
 	// topology block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/volume#topology Volume#topology}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/volume#topology Volume#topology}
 	Topology interface{} `field:"required" json:"topology" yaml:"topology"`
 }
 

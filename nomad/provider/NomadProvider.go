@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs nomad}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs nomad}.
 type NomadProvider interface {
 	cdktf.TerraformProvider
 	Address() *string
@@ -545,7 +545,7 @@ func (j *jsiiProxy_NomadProvider) VaultTokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs nomad} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs nomad} Resource.
 func NewNomadProvider(scope constructs.Construct, id *string, config *NomadProviderConfig) NomadProvider {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewNomadProvider(scope constructs.Construct, id *string, config *NomadProvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs nomad} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs nomad} Resource.
 func NewNomadProvider_Override(n NomadProvider, scope constructs.Construct, id *string, config *NomadProviderConfig) {
 	_init_.Initialize()
 

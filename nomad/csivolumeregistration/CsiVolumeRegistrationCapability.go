@@ -7,11 +7,11 @@ package csivolumeregistration
 type CsiVolumeRegistrationCapability struct {
 	// Defines whether a volume should be available concurrently.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume_registration#access_mode CsiVolumeRegistration#access_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume_registration#access_mode CsiVolumeRegistration#access_mode}
 	AccessMode *string `field:"required" json:"accessMode" yaml:"accessMode"`
 	// The storage API that will be used by the volume.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume_registration#attachment_mode CsiVolumeRegistration#attachment_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume_registration#attachment_mode CsiVolumeRegistration#attachment_mode}
 	AttachmentMode *string `field:"required" json:"attachmentMode" yaml:"attachmentMode"`
 }
 

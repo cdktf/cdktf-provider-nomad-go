@@ -235,6 +235,14 @@ func (j *jsiiProxy_DataNomadAllocations) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_DataNomadAllocations) validateSetNamespaceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataNomadAllocations) validateSetPrefixParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

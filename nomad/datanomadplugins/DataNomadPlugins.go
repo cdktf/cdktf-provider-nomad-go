@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/plugins nomad_plugins}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/plugins nomad_plugins}.
 type DataNomadPlugins interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataNomadPlugins) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/plugins nomad_plugins} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/plugins nomad_plugins} Data Source.
 func NewDataNomadPlugins(scope constructs.Construct, id *string, config *DataNomadPluginsConfig) DataNomadPlugins {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataNomadPlugins(scope constructs.Construct, id *string, config *DataNom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/plugins nomad_plugins} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/plugins nomad_plugins} Data Source.
 func NewDataNomadPlugins_Override(d DataNomadPlugins, scope constructs.Construct, id *string, config *DataNomadPluginsConfig) {
 	_init_.Initialize()
 

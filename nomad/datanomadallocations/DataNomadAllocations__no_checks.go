@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataNomadAllocations) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_DataNomadAllocations) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataNomadAllocations) validateSetPrefixParameters(val *string) error {
 	return nil
 }

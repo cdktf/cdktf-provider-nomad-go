@@ -91,6 +91,10 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetOidcClientSec
 	return nil
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetOidcDisableUserinfoParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetOidcDiscoveryUrlParameters(val *string) error {
 	return nil
 }

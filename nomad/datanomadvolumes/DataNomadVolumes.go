@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/volumes nomad_volumes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/volumes nomad_volumes}.
 type DataNomadVolumes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataNomadVolumes) Volumes() cdktf.StringMapList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/volumes nomad_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/volumes nomad_volumes} Data Source.
 func NewDataNomadVolumes(scope constructs.Construct, id *string, config *DataNomadVolumesConfig) DataNomadVolumes {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataNomadVolumes(scope constructs.Construct, id *string, config *DataNom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/volumes nomad_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/volumes nomad_volumes} Data Source.
 func NewDataNomadVolumes_Override(d DataNomadVolumes, scope constructs.Construct, id *string, config *DataNomadVolumesConfig) {
 	_init_.Initialize()
 

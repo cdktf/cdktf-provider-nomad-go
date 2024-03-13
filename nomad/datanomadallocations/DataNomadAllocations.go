@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations nomad_allocations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations nomad_allocations}.
 type DataNomadAllocations interface {
 	cdktf.TerraformDataSource
 	Allocations() DataNomadAllocationsAllocationsList
@@ -46,6 +46,9 @@ type DataNomadAllocations interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Prefix() *string
@@ -90,6 +93,7 @@ type DataNomadAllocations interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetFilter()
 	ResetId()
+	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -243,6 +247,26 @@ func (j *jsiiProxy_DataNomadAllocations) Lifecycle() *cdktf.TerraformResourceLif
 	return returns
 }
 
+func (j *jsiiProxy_DataNomadAllocations) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNomadAllocations) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNomadAllocations) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -324,7 +348,7 @@ func (j *jsiiProxy_DataNomadAllocations) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations nomad_allocations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations nomad_allocations} Data Source.
 func NewDataNomadAllocations(scope constructs.Construct, id *string, config *DataNomadAllocationsConfig) DataNomadAllocations {
 	_init_.Initialize()
 
@@ -342,7 +366,7 @@ func NewDataNomadAllocations(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations nomad_allocations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations nomad_allocations} Data Source.
 func NewDataNomadAllocations_Override(d DataNomadAllocations, scope constructs.Construct, id *string, config *DataNomadAllocationsConfig) {
 	_init_.Initialize()
 
@@ -409,6 +433,17 @@ func (j *jsiiProxy_DataNomadAllocations)SetLifecycle(val *cdktf.TerraformResourc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataNomadAllocations)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespace",
 		val,
 	)
 }
@@ -729,6 +764,14 @@ func (d *jsiiProxy_DataNomadAllocations) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataNomadAllocations) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNamespace",
 		nil, // no parameters
 	)
 }

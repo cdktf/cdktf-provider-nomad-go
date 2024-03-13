@@ -53,6 +53,9 @@ type AclAuthMethodConfigAOutputReference interface {
 	OidcClientSecret() *string
 	SetOidcClientSecret(val *string)
 	OidcClientSecretInput() *string
+	OidcDisableUserinfo() interface{}
+	SetOidcDisableUserinfo(val interface{})
+	OidcDisableUserinfoInput() interface{}
 	OidcDiscoveryUrl() *string
 	SetOidcDiscoveryUrl(val *string)
 	OidcDiscoveryUrlInput() *string
@@ -98,6 +101,7 @@ type AclAuthMethodConfigAOutputReference interface {
 	ResetClaimMappings()
 	ResetDiscoveryCaPem()
 	ResetListClaimMappings()
+	ResetOidcDisableUserinfo()
 	ResetOidcScopes()
 	ResetSigningAlgs()
 	// Produce the Token's value at resolution time.
@@ -300,6 +304,26 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) OidcClientSecretInput() 
 	_jsii_.Get(
 		j,
 		"oidcClientSecretInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) OidcDisableUserinfo() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"oidcDisableUserinfo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) OidcDisableUserinfoInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"oidcDisableUserinfoInput",
 		&returns,
 	)
 	return returns
@@ -519,6 +543,17 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetOidcClientSecret(val *
 	_jsii_.Set(
 		j,
 		"oidcClientSecret",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetOidcDisableUserinfo(val interface{}) {
+	if err := j.validateSetOidcDisableUserinfoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"oidcDisableUserinfo",
 		val,
 	)
 }
@@ -792,6 +827,14 @@ func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetListClaimMappings()
 	_jsii_.InvokeVoid(
 		a,
 		"resetListClaimMappings",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetOidcDisableUserinfo() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOidcDisableUserinfo",
 		nil, // no parameters
 	)
 }

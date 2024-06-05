@@ -19,9 +19,15 @@ type AclAuthMethodConfigAOutputReference interface {
 	BoundAudiences() *[]*string
 	SetBoundAudiences(val *[]*string)
 	BoundAudiencesInput() *[]*string
+	BoundIssuer() *[]*string
+	SetBoundIssuer(val *[]*string)
+	BoundIssuerInput() *[]*string
 	ClaimMappings() *map[string]*string
 	SetClaimMappings(val *map[string]*string)
 	ClaimMappingsInput() *map[string]*string
+	ClockSkewLeeway() *string
+	SetClockSkewLeeway(val *string)
+	ClockSkewLeewayInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,13 +46,28 @@ type AclAuthMethodConfigAOutputReference interface {
 	DiscoveryCaPem() *[]*string
 	SetDiscoveryCaPem(val *[]*string)
 	DiscoveryCaPemInput() *[]*string
+	ExpirationLeeway() *string
+	SetExpirationLeeway(val *string)
+	ExpirationLeewayInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AclAuthMethodConfigA
 	SetInternalValue(val *AclAuthMethodConfigA)
+	JwksCaCert() *string
+	SetJwksCaCert(val *string)
+	JwksCaCertInput() *string
+	JwksUrl() *string
+	SetJwksUrl(val *string)
+	JwksUrlInput() *string
+	JwtValidationPubKeys() *[]*string
+	SetJwtValidationPubKeys(val *[]*string)
+	JwtValidationPubKeysInput() *[]*string
 	ListClaimMappings() *map[string]*string
 	SetListClaimMappings(val *map[string]*string)
 	ListClaimMappingsInput() *map[string]*string
+	NotBeforeLeeway() *string
+	SetNotBeforeLeeway(val *string)
+	NotBeforeLeewayInput() *string
 	OidcClientId() *string
 	SetOidcClientId(val *string)
 	OidcClientIdInput() *string
@@ -97,11 +118,22 @@ type AclAuthMethodConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAllowedRedirectUris()
 	ResetBoundAudiences()
+	ResetBoundIssuer()
 	ResetClaimMappings()
+	ResetClockSkewLeeway()
 	ResetDiscoveryCaPem()
+	ResetExpirationLeeway()
+	ResetJwksCaCert()
+	ResetJwksUrl()
+	ResetJwtValidationPubKeys()
 	ResetListClaimMappings()
+	ResetNotBeforeLeeway()
+	ResetOidcClientId()
+	ResetOidcClientSecret()
 	ResetOidcDisableUserinfo()
+	ResetOidcDiscoveryUrl()
 	ResetOidcScopes()
 	ResetSigningAlgs()
 	// Produce the Token's value at resolution time.
@@ -159,6 +191,26 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) BoundAudiencesInput() *[
 	return returns
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) BoundIssuer() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"boundIssuer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) BoundIssuerInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"boundIssuerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) ClaimMappings() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -174,6 +226,26 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) ClaimMappingsInput() *ma
 	_jsii_.Get(
 		j,
 		"claimMappingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) ClockSkewLeeway() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clockSkewLeeway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) ClockSkewLeewayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clockSkewLeewayInput",
 		&returns,
 	)
 	return returns
@@ -229,6 +301,26 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) DiscoveryCaPemInput() *[
 	return returns
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) ExpirationLeeway() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationLeeway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) ExpirationLeewayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expirationLeewayInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -249,6 +341,66 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) InternalValue() *AclAuth
 	return returns
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) JwksCaCert() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksCaCert",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) JwksCaCertInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksCaCertInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) JwksUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) JwksUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) JwtValidationPubKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"jwtValidationPubKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) JwtValidationPubKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"jwtValidationPubKeysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) ListClaimMappings() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -264,6 +416,26 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) ListClaimMappingsInput()
 	_jsii_.Get(
 		j,
 		"listClaimMappingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) NotBeforeLeeway() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBeforeLeeway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) NotBeforeLeewayInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBeforeLeewayInput",
 		&returns,
 	)
 	return returns
@@ -459,6 +631,17 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetBoundAudiences(val *[]
 	)
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetBoundIssuer(val *[]*string) {
+	if err := j.validateSetBoundIssuerParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"boundIssuer",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetClaimMappings(val *map[string]*string) {
 	if err := j.validateSetClaimMappingsParameters(val); err != nil {
 		panic(err)
@@ -466,6 +649,17 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetClaimMappings(val *map
 	_jsii_.Set(
 		j,
 		"claimMappings",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetClockSkewLeeway(val *string) {
+	if err := j.validateSetClockSkewLeewayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clockSkewLeeway",
 		val,
 	)
 }
@@ -503,6 +697,17 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetDiscoveryCaPem(val *[]
 	)
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetExpirationLeeway(val *string) {
+	if err := j.validateSetExpirationLeewayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expirationLeeway",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetInternalValue(val *AclAuthMethodConfigA) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -514,6 +719,39 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetInternalValue(val *Acl
 	)
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetJwksCaCert(val *string) {
+	if err := j.validateSetJwksCaCertParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jwksCaCert",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetJwksUrl(val *string) {
+	if err := j.validateSetJwksUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jwksUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetJwtValidationPubKeys(val *[]*string) {
+	if err := j.validateSetJwtValidationPubKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jwtValidationPubKeys",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetListClaimMappings(val *map[string]*string) {
 	if err := j.validateSetListClaimMappingsParameters(val); err != nil {
 		panic(err)
@@ -521,6 +759,17 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetListClaimMappings(val 
 	_jsii_.Set(
 		j,
 		"listClaimMappings",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetNotBeforeLeeway(val *string) {
+	if err := j.validateSetNotBeforeLeewayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notBeforeLeeway",
 		val,
 	)
 }
@@ -799,10 +1048,26 @@ func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) InterpolationForAttribut
 	return returns
 }
 
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetAllowedRedirectUris() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowedRedirectUris",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetBoundAudiences() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBoundAudiences",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetBoundIssuer() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetBoundIssuer",
 		nil, // no parameters
 	)
 }
@@ -815,10 +1080,50 @@ func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetClaimMappings() {
 	)
 }
 
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetClockSkewLeeway() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClockSkewLeeway",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetDiscoveryCaPem() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDiscoveryCaPem",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetExpirationLeeway() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExpirationLeeway",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetJwksCaCert() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJwksCaCert",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetJwksUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJwksUrl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetJwtValidationPubKeys() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJwtValidationPubKeys",
 		nil, // no parameters
 	)
 }
@@ -831,10 +1136,42 @@ func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetListClaimMappings()
 	)
 }
 
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetNotBeforeLeeway() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNotBeforeLeeway",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetOidcClientId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOidcClientId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetOidcClientSecret() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOidcClientSecret",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetOidcDisableUserinfo() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOidcDisableUserinfo",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetOidcDiscoveryUrl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOidcDiscoveryUrl",
 		nil, // no parameters
 	)
 }

@@ -59,7 +59,15 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetBoundAudience
 	return nil
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetBoundIssuerParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetClaimMappingsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetClockSkewLeewayParameters(val *string) error {
 	return nil
 }
 
@@ -75,11 +83,31 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetDiscoveryCaPe
 	return nil
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetExpirationLeewayParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetInternalValueParameters(val *AclAuthMethodConfigA) error {
 	return nil
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetJwksCaCertParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetJwksUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetJwtValidationPubKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetListClaimMappingsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetNotBeforeLeewayParameters(val *string) error {
 	return nil
 }
 

@@ -117,7 +117,23 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetBoundAudience
 	return nil
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetBoundIssuerParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetClaimMappingsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetClockSkewLeewayParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -198,6 +214,14 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetDiscoveryCaPe
 	return nil
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetExpirationLeewayParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetInternalValueParameters(val *AclAuthMethodConfigA) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -206,7 +230,39 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetInternalValue
 	return nil
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetJwksCaCertParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetJwksUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetJwtValidationPubKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetListClaimMappingsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetNotBeforeLeewayParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

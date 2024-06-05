@@ -24,20 +24,20 @@ type DataNomadAllocationsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Specifies the expression used to filter the results.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#filter DataNomadAllocations#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/allocations#filter DataNomadAllocations#filter}
 	Filter *string `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#id DataNomadAllocations#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/allocations#id DataNomadAllocations#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Specifies the namespace to search for allocations in.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#namespace DataNomadAllocations#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/allocations#namespace DataNomadAllocations#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Specifies a string to filter node pools based on a name prefix.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#prefix DataNomadAllocations#prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/allocations#prefix DataNomadAllocations#prefix}
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
 }
 

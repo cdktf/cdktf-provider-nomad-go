@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/regions nomad_regions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/regions nomad_regions}.
 type DataNomadRegions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataNomadRegions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/regions nomad_regions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/regions nomad_regions} Data Source.
 func NewDataNomadRegions(scope constructs.Construct, id *string, config *DataNomadRegionsConfig) DataNomadRegions {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataNomadRegions(scope constructs.Construct, id *string, config *DataNom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/regions nomad_regions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/regions nomad_regions} Data Source.
 func NewDataNomadRegions_Override(d DataNomadRegions, scope constructs.Construct, id *string, config *DataNomadRegionsConfig) {
 	_init_.Initialize()
 

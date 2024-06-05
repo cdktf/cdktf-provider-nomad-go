@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule nomad_acl_binding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_binding_rule nomad_acl_binding_rule}.
 type AclBindingRule interface {
 	cdktf.TerraformResource
 	AuthMethod() *string
@@ -428,7 +428,7 @@ func (j *jsiiProxy_AclBindingRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource.
 func NewAclBindingRule(scope constructs.Construct, id *string, config *AclBindingRuleConfig) AclBindingRule {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewAclBindingRule(scope constructs.Construct, id *string, config *AclBindin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource.
 func NewAclBindingRule_Override(a AclBindingRule, scope constructs.Construct, id *string, config *AclBindingRuleConfig) {
 	_init_.Initialize()
 

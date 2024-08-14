@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_policy nomad_acl_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy nomad_acl_policy}.
 type AclPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_AclPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_policy nomad_acl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy nomad_acl_policy} Resource.
 func NewAclPolicy(scope constructs.Construct, id *string, config *AclPolicyConfig) AclPolicy {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewAclPolicy(scope constructs.Construct, id *string, config *AclPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_policy nomad_acl_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy nomad_acl_policy} Resource.
 func NewAclPolicy_Override(a AclPolicy, scope constructs.Construct, id *string, config *AclPolicyConfig) {
 	_init_.Initialize()
 

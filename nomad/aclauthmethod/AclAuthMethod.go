@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method nomad_acl_auth_method}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_auth_method nomad_acl_auth_method}.
 type AclAuthMethod interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -473,7 +473,7 @@ func (j *jsiiProxy_AclAuthMethod) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method nomad_acl_auth_method} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_auth_method nomad_acl_auth_method} Resource.
 func NewAclAuthMethod(scope constructs.Construct, id *string, config *AclAuthMethodConfig) AclAuthMethod {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewAclAuthMethod(scope constructs.Construct, id *string, config *AclAuthMet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method nomad_acl_auth_method} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_auth_method nomad_acl_auth_method} Resource.
 func NewAclAuthMethod_Override(a AclAuthMethod, scope constructs.Construct, id *string, config *AclAuthMethodConfig) {
 	_init_.Initialize()
 

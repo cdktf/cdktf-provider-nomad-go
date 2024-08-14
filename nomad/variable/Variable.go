@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/variable nomad_variable}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/variable nomad_variable}.
 type Variable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_Variable) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/variable nomad_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/variable nomad_variable} Resource.
 func NewVariable(scope constructs.Construct, id *string, config *VariableConfig) Variable {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewVariable(scope constructs.Construct, id *string, config *VariableConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/variable nomad_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/variable nomad_variable} Resource.
 func NewVariable_Override(v Variable, scope constructs.Construct, id *string, config *VariableConfig) {
 	_init_.Initialize()
 

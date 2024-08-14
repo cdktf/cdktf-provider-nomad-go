@@ -7,11 +7,11 @@ package nodepool
 type NodePoolSchedulerConfig struct {
 	// If true, the node pool will have memory oversubscription enabled.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/node_pool#memory_oversubscription NodePool#memory_oversubscription}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/node_pool#memory_oversubscription NodePool#memory_oversubscription}
 	MemoryOversubscription *string `field:"optional" json:"memoryOversubscription" yaml:"memoryOversubscription"`
 	// The scheduler algorithm to use in the node pool.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/node_pool#scheduler_algorithm NodePool#scheduler_algorithm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/node_pool#scheduler_algorithm NodePool#scheduler_algorithm}
 	SchedulerAlgorithm *string `field:"optional" json:"schedulerAlgorithm" yaml:"schedulerAlgorithm"`
 }
 

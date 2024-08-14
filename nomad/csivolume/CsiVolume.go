@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/csi_volume nomad_csi_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/csi_volume nomad_csi_volume}.
 type CsiVolume interface {
 	cdktf.TerraformResource
 	Capability() CsiVolumeCapabilityList
@@ -785,7 +785,7 @@ func (j *jsiiProxy_CsiVolume) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/csi_volume nomad_csi_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/csi_volume nomad_csi_volume} Resource.
 func NewCsiVolume(scope constructs.Construct, id *string, config *CsiVolumeConfig) CsiVolume {
 	_init_.Initialize()
 
@@ -803,7 +803,7 @@ func NewCsiVolume(scope constructs.Construct, id *string, config *CsiVolumeConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/csi_volume nomad_csi_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/csi_volume nomad_csi_volume} Resource.
 func NewCsiVolume_Override(c CsiVolume, scope constructs.Construct, id *string, config *CsiVolumeConfig) {
 	_init_.Initialize()
 

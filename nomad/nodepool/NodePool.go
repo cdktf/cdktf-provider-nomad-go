@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/node_pool nomad_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/node_pool nomad_node_pool}.
 type NodePool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_NodePool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/node_pool nomad_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/node_pool nomad_node_pool} Resource.
 func NewNodePool(scope constructs.Construct, id *string, config *NodePoolConfig) NodePool {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewNodePool(scope constructs.Construct, id *string, config *NodePoolConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/node_pool nomad_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/node_pool nomad_node_pool} Resource.
 func NewNodePool_Override(n NodePool, scope constructs.Construct, id *string, config *NodePoolConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/volume nomad_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/volume nomad_volume}.
 type Volume interface {
 	cdktf.TerraformResource
 	AccessMode() *string
@@ -765,7 +765,7 @@ func (j *jsiiProxy_Volume) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/volume nomad_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/volume nomad_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -783,7 +783,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/volume nomad_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/volume nomad_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 

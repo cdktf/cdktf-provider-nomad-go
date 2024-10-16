@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/allocations nomad_allocations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/allocations nomad_allocations}.
 type DataNomadAllocations interface {
 	cdktf.TerraformDataSource
 	Allocations() DataNomadAllocationsAllocationsList
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataNomadAllocations) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/allocations nomad_allocations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/allocations nomad_allocations} Data Source.
 func NewDataNomadAllocations(scope constructs.Construct, id *string, config *DataNomadAllocationsConfig) DataNomadAllocations {
 	_init_.Initialize()
 
@@ -366,7 +366,7 @@ func NewDataNomadAllocations(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/allocations nomad_allocations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/allocations nomad_allocations} Data Source.
 func NewDataNomadAllocations_Override(d DataNomadAllocations, scope constructs.Construct, id *string, config *DataNomadAllocationsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/acl_token nomad_acl_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/acl_token nomad_acl_token}.
 type DataNomadAclToken interface {
 	cdktf.TerraformDataSource
 	AccessorId() *string
@@ -387,7 +387,7 @@ func (j *jsiiProxy_DataNomadAclToken) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/acl_token nomad_acl_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/acl_token nomad_acl_token} Data Source.
 func NewDataNomadAclToken(scope constructs.Construct, id *string, config *DataNomadAclTokenConfig) DataNomadAclToken {
 	_init_.Initialize()
 
@@ -405,7 +405,7 @@ func NewDataNomadAclToken(scope constructs.Construct, id *string, config *DataNo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/acl_token nomad_acl_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/acl_token nomad_acl_token} Data Source.
 func NewDataNomadAclToken_Override(d DataNomadAclToken, scope constructs.Construct, id *string, config *DataNomadAclTokenConfig) {
 	_init_.Initialize()
 

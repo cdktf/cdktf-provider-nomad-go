@@ -63,10 +63,6 @@ func (j *jsiiProxy_JobHcl2OutputReference) validateSetComplexObjectIsFromSetPara
 	return nil
 }
 
-func (j *jsiiProxy_JobHcl2OutputReference) validateSetEnabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_JobHcl2OutputReference) validateSetInternalValueParameters(val *JobHcl2) error {
 	return nil
 }

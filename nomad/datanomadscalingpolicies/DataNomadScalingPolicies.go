@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/scaling_policies nomad_scaling_policies}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/scaling_policies nomad_scaling_policies}.
 type DataNomadScalingPolicies interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataNomadScalingPolicies) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/scaling_policies nomad_scaling_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/scaling_policies nomad_scaling_policies} Data Source.
 func NewDataNomadScalingPolicies(scope constructs.Construct, id *string, config *DataNomadScalingPoliciesConfig) DataNomadScalingPolicies {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataNomadScalingPolicies(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/scaling_policies nomad_scaling_policies} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/scaling_policies nomad_scaling_policies} Data Source.
 func NewDataNomadScalingPolicies_Override(d DataNomadScalingPolicies, scope constructs.Construct, id *string, config *DataNomadScalingPoliciesConfig) {
 	_init_.Initialize()
 

@@ -7,7 +7,7 @@ package volume
 type VolumeTopologyRequestRequiredTopology struct {
 	// Define attributes for the topology request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/volume#segments Volume#segments}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/volume#segments Volume#segments}
 	Segments *map[string]*string `field:"required" json:"segments" yaml:"segments"`
 }
 

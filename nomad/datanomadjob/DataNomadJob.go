@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/job nomad_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/job nomad_job}.
 type DataNomadJob interface {
 	cdktf.TerraformDataSource
 	AllAtOnce() cdktf.IResolvable
@@ -521,7 +521,7 @@ func (j *jsiiProxy_DataNomadJob) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/job nomad_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/job nomad_job} Data Source.
 func NewDataNomadJob(scope constructs.Construct, id *string, config *DataNomadJobConfig) DataNomadJob {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewDataNomadJob(scope constructs.Construct, id *string, config *DataNomadJo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/job nomad_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/job nomad_job} Data Source.
 func NewDataNomadJob_Override(d DataNomadJob, scope constructs.Construct, id *string, config *DataNomadJobConfig) {
 	_init_.Initialize()
 

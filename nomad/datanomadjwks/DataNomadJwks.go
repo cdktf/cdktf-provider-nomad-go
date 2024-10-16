@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/jwks nomad_jwks}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/jwks nomad_jwks}.
 type DataNomadJwks interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DataNomadJwks) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/jwks nomad_jwks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/jwks nomad_jwks} Data Source.
 func NewDataNomadJwks(scope constructs.Construct, id *string, config *DataNomadJwksConfig) DataNomadJwks {
 	_init_.Initialize()
 
@@ -305,7 +305,7 @@ func NewDataNomadJwks(scope constructs.Construct, id *string, config *DataNomadJ
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/jwks nomad_jwks} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/jwks nomad_jwks} Data Source.
 func NewDataNomadJwks_Override(d DataNomadJwks, scope constructs.Construct, id *string, config *DataNomadJwksConfig) {
 	_init_.Initialize()
 

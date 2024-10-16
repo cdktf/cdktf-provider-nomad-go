@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/csi_volume_registration nomad_csi_volume_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/csi_volume_registration nomad_csi_volume_registration}.
 type CsiVolumeRegistration interface {
 	cdktf.TerraformResource
 	Capability() CsiVolumeRegistrationCapabilityList
@@ -798,7 +798,7 @@ func (j *jsiiProxy_CsiVolumeRegistration) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/csi_volume_registration nomad_csi_volume_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/csi_volume_registration nomad_csi_volume_registration} Resource.
 func NewCsiVolumeRegistration(scope constructs.Construct, id *string, config *CsiVolumeRegistrationConfig) CsiVolumeRegistration {
 	_init_.Initialize()
 
@@ -816,7 +816,7 @@ func NewCsiVolumeRegistration(scope constructs.Construct, id *string, config *Cs
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/csi_volume_registration nomad_csi_volume_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/csi_volume_registration nomad_csi_volume_registration} Resource.
 func NewCsiVolumeRegistration_Override(c CsiVolumeRegistration, scope constructs.Construct, id *string, config *CsiVolumeRegistrationConfig) {
 	_init_.Initialize()
 

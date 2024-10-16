@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job nomad_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job nomad_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AllocationIds() *[]*string
@@ -55,9 +55,6 @@ type Job interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	Hcl1() interface{}
-	SetHcl1(val interface{})
-	Hcl1Input() interface{}
 	Hcl2() JobHcl2OutputReference
 	Hcl2Input() *JobHcl2
 	Id() *string
@@ -164,7 +161,6 @@ type Job interface {
 	ResetDeregisterOnDestroy()
 	ResetDeregisterOnIdChange()
 	ResetDetach()
-	ResetHcl1()
 	ResetHcl2()
 	ResetId()
 	ResetJson()
@@ -390,26 +386,6 @@ func (j *jsiiProxy_Job) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Job) Hcl1() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"hcl1",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Job) Hcl1Input() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"hcl1Input",
 		&returns,
 	)
 	return returns
@@ -766,7 +742,7 @@ func (j *jsiiProxy_Job) VaultTokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job nomad_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job nomad_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -784,7 +760,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job nomad_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job nomad_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -873,17 +849,6 @@ func (j *jsiiProxy_Job)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Job)SetHcl1(val interface{}) {
-	if err := j.validateSetHcl1Parameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"hcl1",
 		val,
 	)
 }
@@ -1409,14 +1374,6 @@ func (j *jsiiProxy_Job) ResetDetach() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDetach",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_Job) ResetHcl1() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetHcl1",
 		nil, // no parameters
 	)
 }

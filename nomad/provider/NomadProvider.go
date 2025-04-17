@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs nomad}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs nomad}.
 type NomadProvider interface {
 	cdktf.TerraformProvider
 	Address() *string
@@ -37,9 +37,6 @@ type NomadProvider interface {
 	CertPemInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
-	ConsulToken() *string
-	SetConsulToken(val *string)
-	ConsulTokenInput() *string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -80,9 +77,6 @@ type NomadProvider interface {
 	TerraformProviderSource() *string
 	// Experimental.
 	TerraformResourceType() *string
-	VaultToken() *string
-	SetVaultToken(val *string)
-	VaultTokenInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
@@ -93,7 +87,6 @@ type NomadProvider interface {
 	ResetCaPem()
 	ResetCertFile()
 	ResetCertPem()
-	ResetConsulToken()
 	ResetHeaders()
 	ResetHttpAuth()
 	ResetIgnoreEnvVars()
@@ -105,7 +98,6 @@ type NomadProvider interface {
 	ResetRegion()
 	ResetSecretId()
 	ResetSkipVerify()
-	ResetVaultToken()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -259,26 +251,6 @@ func (j *jsiiProxy_NomadProvider) ConstructNodeMetadata() *map[string]interface{
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NomadProvider) ConsulToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"consulToken",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NomadProvider) ConsulTokenInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"consulTokenInput",
 		&returns,
 	)
 	return returns
@@ -524,28 +496,8 @@ func (j *jsiiProxy_NomadProvider) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_NomadProvider) VaultToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vaultToken",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_NomadProvider) VaultTokenInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vaultTokenInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs nomad} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs nomad} Resource.
 func NewNomadProvider(scope constructs.Construct, id *string, config *NomadProviderConfig) NomadProvider {
 	_init_.Initialize()
 
@@ -563,7 +515,7 @@ func NewNomadProvider(scope constructs.Construct, id *string, config *NomadProvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs nomad} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs nomad} Resource.
 func NewNomadProvider_Override(n NomadProvider, scope constructs.Construct, id *string, config *NomadProviderConfig) {
 	_init_.Initialize()
 
@@ -618,14 +570,6 @@ func (j *jsiiProxy_NomadProvider)SetCertPem(val *string) {
 	_jsii_.Set(
 		j,
 		"certPem",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NomadProvider)SetConsulToken(val *string) {
-	_jsii_.Set(
-		j,
-		"consulToken",
 		val,
 	)
 }
@@ -699,14 +643,6 @@ func (j *jsiiProxy_NomadProvider)SetSkipVerify(val interface{}) {
 	_jsii_.Set(
 		j,
 		"skipVerify",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NomadProvider)SetVaultToken(val *string) {
-	_jsii_.Set(
-		j,
-		"vaultToken",
 		val,
 	)
 }
@@ -876,14 +812,6 @@ func (n *jsiiProxy_NomadProvider) ResetCertPem() {
 	)
 }
 
-func (n *jsiiProxy_NomadProvider) ResetConsulToken() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetConsulToken",
-		nil, // no parameters
-	)
-}
-
 func (n *jsiiProxy_NomadProvider) ResetHeaders() {
 	_jsii_.InvokeVoid(
 		n,
@@ -952,14 +880,6 @@ func (n *jsiiProxy_NomadProvider) ResetSkipVerify() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetSkipVerify",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NomadProvider) ResetVaultToken() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetVaultToken",
 		nil, // no parameters
 	)
 }

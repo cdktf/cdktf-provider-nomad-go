@@ -103,10 +103,6 @@ func (j *jsiiProxy_Job) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Job) validateSetConsulTokenParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Job) validateSetCountParameters(val interface{}) error {
 	return nil
 }
@@ -156,10 +152,6 @@ func (j *jsiiProxy_Job) validateSetReadAllocationIdsParameters(val interface{}) 
 }
 
 func (j *jsiiProxy_Job) validateSetRerunIfDeadParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Job) validateSetVaultTokenParameters(val *string) error {
 	return nil
 }
 

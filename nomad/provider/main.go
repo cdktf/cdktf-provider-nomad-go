@@ -29,8 +29,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "certPem", GoGetter: "CertPem"},
 			_jsii_.MemberProperty{JsiiProperty: "certPemInput", GoGetter: "CertPemInput"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "consulToken", GoGetter: "ConsulToken"},
-			_jsii_.MemberProperty{JsiiProperty: "consulTokenInput", GoGetter: "ConsulTokenInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "headers", GoGetter: "Headers"},
@@ -54,7 +52,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCaPem", GoMethod: "ResetCaPem"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertFile", GoMethod: "ResetCertFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertPem", GoMethod: "ResetCertPem"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConsulToken", GoMethod: "ResetConsulToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHeaders", GoMethod: "ResetHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHttpAuth", GoMethod: "ResetHttpAuth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIgnoreEnvVars", GoMethod: "ResetIgnoreEnvVars"},
@@ -64,7 +61,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretId", GoMethod: "ResetSecretId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipVerify", GoMethod: "ResetSkipVerify"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVaultToken", GoMethod: "ResetVaultToken"},
 			_jsii_.MemberProperty{JsiiProperty: "secretId", GoGetter: "SecretId"},
 			_jsii_.MemberProperty{JsiiProperty: "secretIdInput", GoGetter: "SecretIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "skipVerify", GoGetter: "SkipVerify"},
@@ -78,8 +74,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "vaultToken", GoGetter: "VaultToken"},
-			_jsii_.MemberProperty{JsiiProperty: "vaultTokenInput", GoGetter: "VaultTokenInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_NomadProvider{}

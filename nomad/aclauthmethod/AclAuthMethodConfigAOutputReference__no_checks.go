@@ -47,6 +47,10 @@ func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) validateInterpolationFor
 	return nil
 }
 
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) validatePutOidcClientAssertionParameters(value *AclAuthMethodConfigOidcClientAssertion) error {
+	return nil
+}
+
 func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -127,6 +131,10 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetOidcDiscovery
 	return nil
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetOidcEnablePkceParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetOidcScopesParameters(val *[]*string) error {
 	return nil
 }
@@ -140,6 +148,10 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetTerraformAttr
 }
 
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) validateSetVerboseLoggingParameters(val interface{}) error {
 	return nil
 }
 

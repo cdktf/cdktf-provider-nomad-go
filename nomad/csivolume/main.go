@@ -30,6 +30,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cloneIdInput", GoGetter: "CloneIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "context", GoGetter: "Context"},
 			_jsii_.MemberProperty{JsiiProperty: "controllerRequired", GoGetter: "ControllerRequired"},
 			_jsii_.MemberProperty{JsiiProperty: "controllersExpected", GoGetter: "ControllersExpected"},
 			_jsii_.MemberProperty{JsiiProperty: "controllersHealthy", GoGetter: "ControllersHealthy"},

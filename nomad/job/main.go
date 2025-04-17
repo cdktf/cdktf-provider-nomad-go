@@ -20,8 +20,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
-			_jsii_.MemberProperty{JsiiProperty: "consulToken", GoGetter: "ConsulToken"},
-			_jsii_.MemberProperty{JsiiProperty: "consulTokenInput", GoGetter: "ConsulTokenInput"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "datacenters", GoGetter: "Datacenters"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
@@ -79,7 +77,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "rerunIfDead", GoGetter: "RerunIfDead"},
 			_jsii_.MemberProperty{JsiiProperty: "rerunIfDeadInput", GoGetter: "RerunIfDeadInput"},
-			_jsii_.MemberMethod{JsiiMethod: "resetConsulToken", GoMethod: "ResetConsulToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeregisterOnDestroy", GoMethod: "ResetDeregisterOnDestroy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeregisterOnIdChange", GoMethod: "ResetDeregisterOnIdChange"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDetach", GoMethod: "ResetDetach"},
@@ -92,7 +89,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetReadAllocationIds", GoMethod: "ResetReadAllocationIds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRerunIfDead", GoMethod: "ResetRerunIfDead"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVaultToken", GoMethod: "ResetVaultToken"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
@@ -107,8 +103,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
-			_jsii_.MemberProperty{JsiiProperty: "vaultToken", GoGetter: "VaultToken"},
-			_jsii_.MemberProperty{JsiiProperty: "vaultTokenInput", GoGetter: "VaultTokenInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Job{}

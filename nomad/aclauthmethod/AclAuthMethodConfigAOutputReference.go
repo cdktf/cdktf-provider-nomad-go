@@ -68,6 +68,8 @@ type AclAuthMethodConfigAOutputReference interface {
 	NotBeforeLeeway() *string
 	SetNotBeforeLeeway(val *string)
 	NotBeforeLeewayInput() *string
+	OidcClientAssertion() AclAuthMethodConfigOidcClientAssertionOutputReference
+	OidcClientAssertionInput() *AclAuthMethodConfigOidcClientAssertion
 	OidcClientId() *string
 	SetOidcClientId(val *string)
 	OidcClientIdInput() *string
@@ -80,6 +82,9 @@ type AclAuthMethodConfigAOutputReference interface {
 	OidcDiscoveryUrl() *string
 	SetOidcDiscoveryUrl(val *string)
 	OidcDiscoveryUrlInput() *string
+	OidcEnablePkce() interface{}
+	SetOidcEnablePkce(val interface{})
+	OidcEnablePkceInput() interface{}
 	OidcScopes() *[]*string
 	SetOidcScopes(val *[]*string)
 	OidcScopesInput() *[]*string
@@ -94,6 +99,9 @@ type AclAuthMethodConfigAOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VerboseLogging() interface{}
+	SetVerboseLogging(val interface{})
+	VerboseLoggingInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -118,6 +126,7 @@ type AclAuthMethodConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutOidcClientAssertion(value *AclAuthMethodConfigOidcClientAssertion)
 	ResetAllowedRedirectUris()
 	ResetBoundAudiences()
 	ResetBoundIssuer()
@@ -130,12 +139,15 @@ type AclAuthMethodConfigAOutputReference interface {
 	ResetJwtValidationPubKeys()
 	ResetListClaimMappings()
 	ResetNotBeforeLeeway()
+	ResetOidcClientAssertion()
 	ResetOidcClientId()
 	ResetOidcClientSecret()
 	ResetOidcDisableUserinfo()
 	ResetOidcDiscoveryUrl()
+	ResetOidcEnablePkce()
 	ResetOidcScopes()
 	ResetSigningAlgs()
+	ResetVerboseLogging()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -441,6 +453,26 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) NotBeforeLeewayInput() *
 	return returns
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) OidcClientAssertion() AclAuthMethodConfigOidcClientAssertionOutputReference {
+	var returns AclAuthMethodConfigOidcClientAssertionOutputReference
+	_jsii_.Get(
+		j,
+		"oidcClientAssertion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) OidcClientAssertionInput() *AclAuthMethodConfigOidcClientAssertion {
+	var returns *AclAuthMethodConfigOidcClientAssertion
+	_jsii_.Get(
+		j,
+		"oidcClientAssertionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) OidcClientId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -521,6 +553,26 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) OidcDiscoveryUrlInput() 
 	return returns
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) OidcEnablePkce() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"oidcEnablePkce",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) OidcEnablePkceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"oidcEnablePkceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) OidcScopes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -576,6 +628,26 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) TerraformResource() cdkt
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) VerboseLogging() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verboseLogging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference) VerboseLoggingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"verboseLoggingInput",
 		&returns,
 	)
 	return returns
@@ -818,6 +890,17 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetOidcDiscoveryUrl(val *
 	)
 }
 
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetOidcEnablePkce(val interface{}) {
+	if err := j.validateSetOidcEnablePkceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"oidcEnablePkce",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetOidcScopes(val *[]*string) {
 	if err := j.validateSetOidcScopesParameters(val); err != nil {
 		panic(err)
@@ -858,6 +941,17 @@ func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetTerraformResource(val 
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AclAuthMethodConfigAOutputReference)SetVerboseLogging(val interface{}) {
+	if err := j.validateSetVerboseLoggingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"verboseLogging",
 		val,
 	)
 }
@@ -1048,6 +1142,17 @@ func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) InterpolationForAttribut
 	return returns
 }
 
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) PutOidcClientAssertion(value *AclAuthMethodConfigOidcClientAssertion) {
+	if err := a.validatePutOidcClientAssertionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putOidcClientAssertion",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetAllowedRedirectUris() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1144,6 +1249,14 @@ func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetNotBeforeLeeway() {
 	)
 }
 
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetOidcClientAssertion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOidcClientAssertion",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetOidcClientId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1176,6 +1289,14 @@ func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetOidcDiscoveryUrl() 
 	)
 }
 
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetOidcEnablePkce() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOidcEnablePkce",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetOidcScopes() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1188,6 +1309,14 @@ func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetSigningAlgs() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSigningAlgs",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AclAuthMethodConfigAOutputReference) ResetVerboseLogging() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVerboseLogging",
 		nil, // no parameters
 	)
 }

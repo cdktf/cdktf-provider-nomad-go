@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job nomad_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/job nomad_job}.
 type Job interface {
 	cdktf.TerraformResource
 	AllocationIds() *[]*string
@@ -24,9 +24,6 @@ type Job interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
-	ConsulToken() *string
-	SetConsulToken(val *string)
-	ConsulTokenInput() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -109,9 +106,6 @@ type Job interface {
 	Timeouts() JobTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Type() *string
-	VaultToken() *string
-	SetVaultToken(val *string)
-	VaultTokenInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -157,7 +151,6 @@ type Job interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutHcl2(value *JobHcl2)
 	PutTimeouts(value *JobTimeouts)
-	ResetConsulToken()
 	ResetDeregisterOnDestroy()
 	ResetDeregisterOnIdChange()
 	ResetDetach()
@@ -172,7 +165,6 @@ type Job interface {
 	ResetReadAllocationIds()
 	ResetRerunIfDead()
 	ResetTimeouts()
-	ResetVaultToken()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -226,26 +218,6 @@ func (j *jsiiProxy_Job) ConstructNodeMetadata() *map[string]interface{} {
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Job) ConsulToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"consulToken",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Job) ConsulTokenInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"consulTokenInput",
 		&returns,
 	)
 	return returns
@@ -721,28 +693,8 @@ func (j *jsiiProxy_Job) Type() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Job) VaultToken() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vaultToken",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_Job) VaultTokenInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vaultTokenInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job nomad_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/job nomad_job} Resource.
 func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	_init_.Initialize()
 
@@ -760,7 +712,7 @@ func NewJob(scope constructs.Construct, id *string, config *JobConfig) Job {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job nomad_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/job nomad_job} Resource.
 func NewJob_Override(j Job, scope constructs.Construct, id *string, config *JobConfig) {
 	_init_.Initialize()
 
@@ -778,17 +730,6 @@ func (j *jsiiProxy_Job)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Job)SetConsulToken(val *string) {
-	if err := j.validateSetConsulTokenParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"consulToken",
 		val,
 	)
 }
@@ -956,17 +897,6 @@ func (j *jsiiProxy_Job)SetRerunIfDead(val interface{}) {
 	_jsii_.Set(
 		j,
 		"rerunIfDead",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Job)SetVaultToken(val *string) {
-	if err := j.validateSetVaultTokenParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"vaultToken",
 		val,
 	)
 }
@@ -1346,14 +1276,6 @@ func (j *jsiiProxy_Job) PutTimeouts(value *JobTimeouts) {
 	)
 }
 
-func (j *jsiiProxy_Job) ResetConsulToken() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetConsulToken",
-		nil, // no parameters
-	)
-}
-
 func (j *jsiiProxy_Job) ResetDeregisterOnDestroy() {
 	_jsii_.InvokeVoid(
 		j,
@@ -1446,14 +1368,6 @@ func (j *jsiiProxy_Job) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (j *jsiiProxy_Job) ResetVaultToken() {
-	_jsii_.InvokeVoid(
-		j,
-		"resetVaultToken",
 		nil, // no parameters
 	)
 }

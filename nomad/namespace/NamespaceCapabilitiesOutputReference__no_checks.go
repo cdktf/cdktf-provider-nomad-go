@@ -59,7 +59,15 @@ func (j *jsiiProxy_NamespaceCapabilitiesOutputReference) validateSetComplexObjec
 	return nil
 }
 
+func (j *jsiiProxy_NamespaceCapabilitiesOutputReference) validateSetDisabledNetworkModesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NamespaceCapabilitiesOutputReference) validateSetDisabledTaskDriversParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NamespaceCapabilitiesOutputReference) validateSetEnabledNetworkModesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs nomad}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs nomad}.
 type NomadProvider interface {
 	cdktf.TerraformProvider
 	Address() *string
@@ -21,6 +21,9 @@ type NomadProvider interface {
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
+	AuthJwt() *NomadProviderAuthJwt
+	SetAuthJwt(val *NomadProviderAuthJwt)
+	AuthJwtInput() *NomadProviderAuthJwt
 	CaFile() *string
 	SetCaFile(val *string)
 	CaFileInput() *string
@@ -83,6 +86,7 @@ type NomadProvider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAlias()
+	ResetAuthJwt()
 	ResetCaFile()
 	ResetCaPem()
 	ResetCertFile()
@@ -151,6 +155,26 @@ func (j *jsiiProxy_NomadProvider) AliasInput() *string {
 	_jsii_.Get(
 		j,
 		"aliasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadProvider) AuthJwt() *NomadProviderAuthJwt {
+	var returns *NomadProviderAuthJwt
+	_jsii_.Get(
+		j,
+		"authJwt",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadProvider) AuthJwtInput() *NomadProviderAuthJwt {
+	var returns *NomadProviderAuthJwt
+	_jsii_.Get(
+		j,
+		"authJwtInput",
 		&returns,
 	)
 	return returns
@@ -497,7 +521,7 @@ func (j *jsiiProxy_NomadProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs nomad} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs nomad} Resource.
 func NewNomadProvider(scope constructs.Construct, id *string, config *NomadProviderConfig) NomadProvider {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewNomadProvider(scope constructs.Construct, id *string, config *NomadProvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs nomad} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs nomad} Resource.
 func NewNomadProvider_Override(n NomadProvider, scope constructs.Construct, id *string, config *NomadProviderConfig) {
 	_init_.Initialize()
 
@@ -538,6 +562,17 @@ func (j *jsiiProxy_NomadProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NomadProvider)SetAuthJwt(val *NomadProviderAuthJwt) {
+	if err := j.validateSetAuthJwtParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authJwt",
 		val,
 	)
 }
@@ -776,6 +811,14 @@ func (n *jsiiProxy_NomadProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetAlias",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NomadProvider) ResetAuthJwt() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetAuthJwt",
 		nil, // no parameters
 	)
 }

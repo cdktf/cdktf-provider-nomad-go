@@ -31,6 +31,10 @@ func validateNomadProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_NomadProvider) validateSetAuthJwtParameters(val *NomadProviderAuthJwt) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadProvider) validateSetHeadersParameters(val interface{}) error {
 	return nil
 }

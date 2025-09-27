@@ -28,9 +28,15 @@ type NamespaceCapabilitiesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisabledNetworkModes() *[]*string
+	SetDisabledNetworkModes(val *[]*string)
+	DisabledNetworkModesInput() *[]*string
 	DisabledTaskDrivers() *[]*string
 	SetDisabledTaskDrivers(val *[]*string)
 	DisabledTaskDriversInput() *[]*string
+	EnabledNetworkModes() *[]*string
+	SetEnabledNetworkModes(val *[]*string)
+	EnabledNetworkModesInput() *[]*string
 	EnabledTaskDrivers() *[]*string
 	SetEnabledTaskDrivers(val *[]*string)
 	EnabledTaskDriversInput() *[]*string
@@ -70,7 +76,9 @@ type NamespaceCapabilitiesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDisabledNetworkModes()
 	ResetDisabledTaskDrivers()
+	ResetEnabledNetworkModes()
 	ResetEnabledTaskDrivers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -117,6 +125,26 @@ func (j *jsiiProxy_NamespaceCapabilitiesOutputReference) CreationStack() *[]*str
 	return returns
 }
 
+func (j *jsiiProxy_NamespaceCapabilitiesOutputReference) DisabledNetworkModes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"disabledNetworkModes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NamespaceCapabilitiesOutputReference) DisabledNetworkModesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"disabledNetworkModesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NamespaceCapabilitiesOutputReference) DisabledTaskDrivers() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -132,6 +160,26 @@ func (j *jsiiProxy_NamespaceCapabilitiesOutputReference) DisabledTaskDriversInpu
 	_jsii_.Get(
 		j,
 		"disabledTaskDriversInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NamespaceCapabilitiesOutputReference) EnabledNetworkModes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledNetworkModes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NamespaceCapabilitiesOutputReference) EnabledNetworkModesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledNetworkModesInput",
 		&returns,
 	)
 	return returns
@@ -247,6 +295,17 @@ func (j *jsiiProxy_NamespaceCapabilitiesOutputReference)SetComplexObjectIsFromSe
 	)
 }
 
+func (j *jsiiProxy_NamespaceCapabilitiesOutputReference)SetDisabledNetworkModes(val *[]*string) {
+	if err := j.validateSetDisabledNetworkModesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disabledNetworkModes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NamespaceCapabilitiesOutputReference)SetDisabledTaskDrivers(val *[]*string) {
 	if err := j.validateSetDisabledTaskDriversParameters(val); err != nil {
 		panic(err)
@@ -254,6 +313,17 @@ func (j *jsiiProxy_NamespaceCapabilitiesOutputReference)SetDisabledTaskDrivers(v
 	_jsii_.Set(
 		j,
 		"disabledTaskDrivers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NamespaceCapabilitiesOutputReference)SetEnabledNetworkModes(val *[]*string) {
+	if err := j.validateSetEnabledNetworkModesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabledNetworkModes",
 		val,
 	)
 }
@@ -488,10 +558,26 @@ func (n *jsiiProxy_NamespaceCapabilitiesOutputReference) InterpolationForAttribu
 	return returns
 }
 
+func (n *jsiiProxy_NamespaceCapabilitiesOutputReference) ResetDisabledNetworkModes() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDisabledNetworkModes",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NamespaceCapabilitiesOutputReference) ResetDisabledTaskDrivers() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDisabledTaskDrivers",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NamespaceCapabilitiesOutputReference) ResetEnabledNetworkModes() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEnabledNetworkModes",
 		nil, // no parameters
 	)
 }

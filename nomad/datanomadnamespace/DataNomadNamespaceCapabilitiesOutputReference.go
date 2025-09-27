@@ -28,7 +28,9 @@ type DataNomadNamespaceCapabilitiesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisabledNetworkModes() *[]*string
 	DisabledTaskDrivers() *[]*string
+	EnabledNetworkModes() *[]*string
 	EnabledTaskDrivers() *[]*string
 	// Experimental.
 	Fqn() *string
@@ -111,11 +113,31 @@ func (j *jsiiProxy_DataNomadNamespaceCapabilitiesOutputReference) CreationStack(
 	return returns
 }
 
+func (j *jsiiProxy_DataNomadNamespaceCapabilitiesOutputReference) DisabledNetworkModes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"disabledNetworkModes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataNomadNamespaceCapabilitiesOutputReference) DisabledTaskDrivers() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"disabledTaskDrivers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataNomadNamespaceCapabilitiesOutputReference) EnabledNetworkModes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enabledNetworkModes",
 		&returns,
 	)
 	return returns

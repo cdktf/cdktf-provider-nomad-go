@@ -74,6 +74,14 @@ func validateNomadProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_NomadProvider) validateSetAuthJwtParameters(val *NomadProviderAuthJwt) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NomadProvider) validateSetHeadersParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:

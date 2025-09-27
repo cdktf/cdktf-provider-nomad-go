@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/dynamic_host_volume nomad_dynamic_host_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume nomad_dynamic_host_volume}.
 type DynamicHostVolume interface {
 	cdktf.TerraformResource
 	Capability() DynamicHostVolumeCapabilityList
@@ -600,7 +600,7 @@ func (j *jsiiProxy_DynamicHostVolume) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/dynamic_host_volume nomad_dynamic_host_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume nomad_dynamic_host_volume} Resource.
 func NewDynamicHostVolume(scope constructs.Construct, id *string, config *DynamicHostVolumeConfig) DynamicHostVolume {
 	_init_.Initialize()
 
@@ -618,7 +618,7 @@ func NewDynamicHostVolume(scope constructs.Construct, id *string, config *Dynami
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/dynamic_host_volume nomad_dynamic_host_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume nomad_dynamic_host_volume} Resource.
 func NewDynamicHostVolume_Override(d DynamicHostVolume, scope constructs.Construct, id *string, config *DynamicHostVolumeConfig) {
 	_init_.Initialize()
 

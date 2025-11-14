@@ -15,7 +15,7 @@ func (c *jsiiProxy_CsiVolumeRegistrationTopologyRequestRequiredTopologyList) val
 	return nil
 }
 
-func (c *jsiiProxy_CsiVolumeRegistrationTopologyRequestRequiredTopologyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsiVolumeRegistrationTopologyRequestRequiredTopologyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

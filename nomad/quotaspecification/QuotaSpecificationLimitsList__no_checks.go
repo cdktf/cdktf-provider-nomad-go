@@ -15,7 +15,7 @@ func (q *jsiiProxy_QuotaSpecificationLimitsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (q *jsiiProxy_QuotaSpecificationLimitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuotaSpecificationLimitsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

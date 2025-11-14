@@ -43,11 +43,11 @@ func (n *jsiiProxy_NamespaceNodePoolConfigOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (n *jsiiProxy_NamespaceNodePoolConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NamespaceNodePoolConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NamespaceNodePoolConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NamespaceNodePoolConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

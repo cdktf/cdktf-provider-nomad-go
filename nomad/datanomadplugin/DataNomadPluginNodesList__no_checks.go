@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataNomadPluginNodesList) validateGetParameters(index *float6
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadPluginNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNomadPluginNodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -7,7 +7,7 @@ package csivolumeregistration
 type CsiVolumeRegistrationTopologyRequestRequiredTopology struct {
 	// Define attributes for the topology request.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/csi_volume_registration#segments CsiVolumeRegistration#segments}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/csi_volume_registration#segments CsiVolumeRegistration#segments}
 	Segments *map[string]*string `field:"required" json:"segments" yaml:"segments"`
 }
 

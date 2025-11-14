@@ -15,7 +15,7 @@ func (d *jsiiProxy_DynamicHostVolumeCapabilityList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DynamicHostVolumeCapabilityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamicHostVolumeCapabilityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

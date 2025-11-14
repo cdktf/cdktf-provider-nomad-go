@@ -43,11 +43,11 @@ func (n *jsiiProxy_NodePoolSchedulerConfigOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (n *jsiiProxy_NodePoolSchedulerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NodePoolSchedulerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NodePoolSchedulerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NodePoolSchedulerConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

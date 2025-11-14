@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataNomadDynamicHostVolumeCapabilityOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadDynamicHostVolumeCapabilityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataNomadDynamicHostVolumeCapabilityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadDynamicHostVolumeCapabilityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNomadDynamicHostVolumeCapabilityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

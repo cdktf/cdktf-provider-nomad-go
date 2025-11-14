@@ -43,7 +43,7 @@ func (c *jsiiProxy_CsiVolumeTopologyRequestOutputReference) validateGetStringMap
 	return nil
 }
 
-func (c *jsiiProxy_CsiVolumeTopologyRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CsiVolumeTopologyRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CsiVolumeTopologyRequestOutputReference) validatePutRequiredP
 	return nil
 }
 
-func (c *jsiiProxy_CsiVolumeTopologyRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsiVolumeTopologyRequestOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

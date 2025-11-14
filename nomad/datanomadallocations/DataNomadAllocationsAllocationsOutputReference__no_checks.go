@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataNomadAllocationsAllocationsOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadAllocationsAllocationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataNomadAllocationsAllocationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadAllocationsAllocationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNomadAllocationsAllocationsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

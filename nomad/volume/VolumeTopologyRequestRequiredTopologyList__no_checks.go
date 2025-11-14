@@ -15,7 +15,7 @@ func (v *jsiiProxy_VolumeTopologyRequestRequiredTopologyList) validateGetParamet
 	return nil
 }
 
-func (v *jsiiProxy_VolumeTopologyRequestRequiredTopologyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VolumeTopologyRequestRequiredTopologyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

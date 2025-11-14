@@ -43,11 +43,11 @@ func (e *jsiiProxy_ExternalVolumeTopologyRequestPreferredTopologyOutputReference
 	return nil
 }
 
-func (e *jsiiProxy_ExternalVolumeTopologyRequestPreferredTopologyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ExternalVolumeTopologyRequestPreferredTopologyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ExternalVolumeTopologyRequestPreferredTopologyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExternalVolumeTopologyRequestPreferredTopologyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

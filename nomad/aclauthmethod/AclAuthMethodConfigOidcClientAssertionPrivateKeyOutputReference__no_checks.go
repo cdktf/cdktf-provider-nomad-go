@@ -43,11 +43,11 @@ func (a *jsiiProxy_AclAuthMethodConfigOidcClientAssertionPrivateKeyOutputReferen
 	return nil
 }
 
-func (a *jsiiProxy_AclAuthMethodConfigOidcClientAssertionPrivateKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AclAuthMethodConfigOidcClientAssertionPrivateKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AclAuthMethodConfigOidcClientAssertionPrivateKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AclAuthMethodConfigOidcClientAssertionPrivateKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

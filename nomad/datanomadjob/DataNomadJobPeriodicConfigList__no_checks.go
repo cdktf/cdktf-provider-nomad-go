@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataNomadJobPeriodicConfigList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadJobPeriodicConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNomadJobPeriodicConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

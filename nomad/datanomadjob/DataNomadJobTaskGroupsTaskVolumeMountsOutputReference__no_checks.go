@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataNomadJobTaskGroupsTaskVolumeMountsOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadJobTaskGroupsTaskVolumeMountsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataNomadJobTaskGroupsTaskVolumeMountsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadJobTaskGroupsTaskVolumeMountsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNomadJobTaskGroupsTaskVolumeMountsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

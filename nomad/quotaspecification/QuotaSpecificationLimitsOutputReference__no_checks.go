@@ -43,7 +43,7 @@ func (q *jsiiProxy_QuotaSpecificationLimitsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (q *jsiiProxy_QuotaSpecificationLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuotaSpecificationLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (q *jsiiProxy_QuotaSpecificationLimitsOutputReference) validatePutRegionLim
 	return nil
 }
 
-func (q *jsiiProxy_QuotaSpecificationLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuotaSpecificationLimitsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

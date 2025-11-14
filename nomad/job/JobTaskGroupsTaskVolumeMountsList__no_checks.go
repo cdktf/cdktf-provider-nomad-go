@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobTaskGroupsTaskVolumeMountsList) validateGetParameters(inde
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskGroupsTaskVolumeMountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskGroupsTaskVolumeMountsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

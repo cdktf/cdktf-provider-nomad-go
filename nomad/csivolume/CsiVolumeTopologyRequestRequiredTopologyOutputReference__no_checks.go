@@ -43,11 +43,11 @@ func (c *jsiiProxy_CsiVolumeTopologyRequestRequiredTopologyOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_CsiVolumeTopologyRequestRequiredTopologyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CsiVolumeTopologyRequestRequiredTopologyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CsiVolumeTopologyRequestRequiredTopologyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsiVolumeTopologyRequestRequiredTopologyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CsiVolumeCapabilityList) validateGetParameters(index *float64
 	return nil
 }
 
-func (c *jsiiProxy_CsiVolumeCapabilityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsiVolumeCapabilityList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

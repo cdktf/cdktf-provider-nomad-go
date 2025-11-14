@@ -43,11 +43,11 @@ func (e *jsiiProxy_ExternalVolumeCapabilityOutputReference) validateGetStringMap
 	return nil
 }
 
-func (e *jsiiProxy_ExternalVolumeCapabilityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ExternalVolumeCapabilityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ExternalVolumeCapabilityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExternalVolumeCapabilityOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

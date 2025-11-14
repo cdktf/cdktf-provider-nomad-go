@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataNomadPluginNodesOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadPluginNodesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataNomadPluginNodesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadPluginNodesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNomadPluginNodesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

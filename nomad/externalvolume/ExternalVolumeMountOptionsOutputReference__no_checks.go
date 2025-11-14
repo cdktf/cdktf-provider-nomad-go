@@ -43,11 +43,11 @@ func (e *jsiiProxy_ExternalVolumeMountOptionsOutputReference) validateGetStringM
 	return nil
 }
 
-func (e *jsiiProxy_ExternalVolumeMountOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ExternalVolumeMountOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ExternalVolumeMountOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ExternalVolumeMountOptionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

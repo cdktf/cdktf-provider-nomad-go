@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataNomadAclTokenRolesList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadAclTokenRolesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNomadAclTokenRolesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

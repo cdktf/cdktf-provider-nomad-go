@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataNomadJwksKeysList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadJwksKeysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNomadJwksKeysList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

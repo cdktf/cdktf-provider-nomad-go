@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataNomadScalingPoliciesPoliciesList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadScalingPoliciesPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNomadScalingPoliciesPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

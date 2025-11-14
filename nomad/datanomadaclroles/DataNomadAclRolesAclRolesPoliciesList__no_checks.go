@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataNomadAclRolesAclRolesPoliciesList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataNomadAclRolesAclRolesPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataNomadAclRolesAclRolesPoliciesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

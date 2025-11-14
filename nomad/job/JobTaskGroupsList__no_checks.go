@@ -15,7 +15,7 @@ func (j *jsiiProxy_JobTaskGroupsList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (j *jsiiProxy_JobTaskGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobTaskGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
